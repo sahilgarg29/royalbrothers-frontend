@@ -1,0 +1,68 @@
+.vehicleinfo{
+    display: flex;
+    justify-content: center
+}
+.cashback{
+    height:60%;
+    width:99%;
+    margin: auto;
+   background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_offer_web-c67cc7e8c890d5646866f59ad171f7bbc7ca6c6be6ce5d486062b4cbc8e0f79e.jpg");
+}
+
+.newsImage{
+    display: flex;
+    margin-left: 10%;
+    
+}
+.newsImage div{
+    height:80px;
+   
+    border:1px solid #EFEFEF;
+    width:19%;
+    padding:2%
+}
+.newsImage div img{
+    height:100%;
+    width:100%;
+}
+.yellowbox{
+    width:3%;
+    height:5px;
+    background-color: #FED250;
+    margin: auto;
+    border-radius: 2%;
+}
+.heading{
+    margin-top: 8%;
+    line-height: 2px;
+    margin-bottom: 3%;
+}
+
+.duration{
+   float: right;
+   display: flex;
+   margin-right: 10%;
+   gap:8%;
+   margin-bottom:3%;
+}
+.excontainer{
+    display: flex;
+  
+    width:80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.exlusiveBikes{
+    padding-top: 1%;
+    width:23%;
+    color: #202021;
+    text-align: center;
+    background-color: #F7FAFC;
+}
+.exbutton{
+    
+    width:100%;
+padding: 3%;
+background-color: #FED250;
+border:none
+}
