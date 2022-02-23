@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Box from '@mui/material/Box';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Home = () => {
   const [age, setAge] = React.useState('');
 
@@ -13,29 +14,39 @@ const Home = () => {
     setAge(event.target.value);
   };
   return <div>
-      <div className="cashback">
-    
-      </div>
-    
+     <div className="cashback">
+       
+     </div>
+    <div className="vehiclecontainer">
      <div className="vehicleinfo">
-       <div>
+       
        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png" alt="sanitized"></img>
         <p>Sanitized Vehicles</p> 
-       </div>
-        <div>
+        </div>
+
+
+        <div className="vehicleinfo">
         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png" alt="insurance"></img>
         <p>Vehicle Insurance</p>
         </div>
-         <div>
+        
+        <div className="vehicleinfo">
          <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png" alt="assistance"></img>
         <p>24/7 Road Assitance</p>
-         </div>
-      <div>
+        </div>
+ 
+        <div className="vehicleinfo">
       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png" alt="maintainence"></img>
         <p>Bike Maintance</p>
-      </div>
-        
-     </div>
+        </div>
+        </div>
+    <div className="subscription">
+     <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_carousel_one-5e5beb3711f8184ba280e0791b058b8b1b4f03cad772f10b0ab39adfc5d06ec5.jpg"></img>
+    
+    <button className="subbutton">Subscribe now
+    <ArrowForwardIcon/>
+    </button>
+    </div>
      <div className="heading">
      <h2 style={{textAlign:"center",color:"#212121"}}>OUR FLEET</h2>
      <div className="yellowbox"></div>
@@ -68,7 +79,7 @@ const Home = () => {
   
      <div className="exlusiveBikes">
        <div>
-         <h4>Honda Activa 5G</h4>
+         <h4 style={{color:"#202021"}}>Honda Activa 5G</h4>
          <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566" alt="Activa 5G"></img>
           <hr></hr>
           <h4> ₹20/hour</h4>
@@ -96,11 +107,13 @@ const Home = () => {
      <div className="exlusiveBikes">
        <div>
          <h4>Royal Enfield Thunderbird 350</h4>
+         
          <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/018/medium/TB_350-min_2.png?1519739776" alt="Thunderbird"></img>
           <hr></hr>
           <h4> ₹35/hour</h4>
-          <button className="exbutton">BOOK NOW</button>
+          <button  className="exbutton">BOOK NOW</button>
        </div>
+      
      </div>
      </div>
   <p style={{textAlign:"center"}}>* Excluding of all taxes</p>
