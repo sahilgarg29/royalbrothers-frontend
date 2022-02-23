@@ -117,16 +117,16 @@ const Home = () => {
     
      <div className="newsImage">
        <div>
-       <img  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news2-b2db5fe5ecf6968d4e47cba7876d3ae8a959a5de65901b5a6292032987a38bdd.png" alt="" />
+       <img  src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news2-b2db5fe5ecf6968d4e47cba7876d3ae8a959a5de65901b5a6292032987a38bdd.png" alt="Economic Times" />
        </div>
        <div>
-       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news3-2eb9e0398a565284ca3c41d685e32de985b43ce00541889f59541ee91cb28e61.png" alt="" />
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news3-2eb9e0398a565284ca3c41d685e32de985b43ce00541889f59541ee91cb28e61.png" alt="Times of India" />
        </div>
        <div>
-       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news1-0a213d6dc03c6d68b278a11f210efe7cd727bf2f1fc34982b90b34d2d1c875da.png" alt="" />
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news1-0a213d6dc03c6d68b278a11f210efe7cd727bf2f1fc34982b90b34d2d1c875da.png" alt="The Hindu" />
        </div>
        <div>
-       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/money_control-0301bddd4ac901172098f7d0b590e8dbed35e7fa1064d2ced799f9cbc9185d66.png" alt="" />
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/money_control-0301bddd4ac901172098f7d0b590e8dbed35e7fa1064d2ced799f9cbc9185d66.png" alt="Money Control" />
        </div>
        
      
