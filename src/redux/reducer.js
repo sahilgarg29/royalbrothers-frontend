@@ -1,5 +1,5 @@
 import { loadData, saveData } from "../utils/localStorage";
-import { ADD_ALL_CITIES, SELECT_CITY } from "./actionTypes";
+import { ADD_ALL_BIKES, ADD_ALL_CITIES, SELECT_CITY } from "./actionTypes";
 
 const cityState = {
   selectedCity: loadData("selectedCity") || "",
@@ -13,6 +13,17 @@ export const cityReducer = (state = cityState, action) => {
       return { ...state, selectedCity: action.payload };
     case ADD_ALL_CITIES:
       return { ...state, allCities: action.payload };
+    default:
+      return state;
+  }
+};
+
+const bikeState = [];
+
+export const bikeReducer = (state = bikeState, action) => {
+  switch (action.type) {
+    case ADD_ALL_BIKES:
+      return action.payload;
     default:
       return state;
   }
