@@ -1,0 +1,129 @@
+.Footerone {
+  background-color: #373737;
+  justify-content: space-evenly;
+  text-align: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 200px 200px;
+  gap: 30px;
+}
+@media only screen and (max-device-width: 480px) {
+  .Footerone {
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 300px 300px;
+    height: 900px;
+  }
+
+  .Footerdesc {
+    width: 80%;
+    padding: 10px;
+    background-color: #444444;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Footerlastbox {
+    width: 90%;
+    background-color: #373737;
+
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .Footerlastbox img {
+    margin: 0 10px;
+  }
+
+  .Footerlastbox h3 {
+    color: white;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .Footerone {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px 400px 400px;
+    height: 900px;
+    gap: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .Footerside img {
+    width: 10px;
+    margin: 10px;
+  }
+}
+.Footer_main_upper {
+  width: 50px;
+  background-color: #fed250;
+  height: 3px;
+}
+
+.Footerside {
+  display: flex;
+  align-items: center;
+}
+
+.Footerside img {
+  margin: 10px;
+}
+
+.Footerone h4 {
+  line-height: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Footerone > div {
+  width: 100%;
+  max-width: 300px;
+  color: #dbdbdb;
+  padding: 50px;
+}
+
+.Footerone p {
+  font-size: 14px;
+}
+
+.Footerdesc {
+  width: 95%;
+  padding: 50px;
+  background-color: #444444;
+  text-align: left;
+  display: grid;
+}
+
+.Footerdesc h2 {
+  line-height: 30px;
+  color: white;
+  font-size: 28px;
+}
+
+.Footerdesc p {
+  color: #dbdbdb;
+  font-size: 17px;
+}
+
+.Footerlastbox {
+  width: 102.4%;
+  background-color: #373737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.Footerlastbox img {
+  margin: 0 10px;
+}
+
+.Footerlastbox h3 {
+  color: white;
+  letter-spacing: 1.2px;
+}
+@media only screen and (max-width: 600px) {
+}
