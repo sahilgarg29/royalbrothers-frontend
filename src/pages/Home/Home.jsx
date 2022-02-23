@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import {Slideshow} from "../../components/slideshow"
+import {Footer} from "../../components/footer"
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -41,7 +42,7 @@ const Home = () => {
         </div>
         </div>
     <div className="subscription">
-     <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_carousel_one-5e5beb3711f8184ba280e0791b058b8b1b4f03cad772f10b0ab39adfc5d06ec5.jpg"></img>
+     <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_carousel_one-5e5beb3711f8184ba280e0791b058b8b1b4f03cad772f10b0ab39adfc5d06ec5.jpg" alt="subscription banner"></img>
     
     <button className="subbutton">Subscribe now
     <ArrowForwardIcon/>
@@ -145,7 +146,7 @@ const Home = () => {
      
      </div>
       
-   
+   <Footer/>
   </div>
        
        
