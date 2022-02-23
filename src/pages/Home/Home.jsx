@@ -19,19 +19,19 @@ const Home = () => {
     
      <div className="vehicleinfo">
        <div>
-       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png"></img>
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png" alt="sanitized"></img>
         <p>Sanitized Vehicles</p> 
        </div>
         <div>
-        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png"></img>
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png" alt="insurance"></img>
         <p>Vehicle Insurance</p>
         </div>
          <div>
-         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png"></img>
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png" alt="assistance"></img>
         <p>24/7 Road Assitance</p>
          </div>
       <div>
-      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png"></img>
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png" alt="maintainence"></img>
         <p>Bike Maintance</p>
       </div>
         
@@ -69,7 +69,7 @@ const Home = () => {
      <div className="exlusiveBikes">
        <div>
          <h4>Honda Activa 5G</h4>
-         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566"></img>
+         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566" alt="Activa 5G"></img>
           <hr></hr>
           <h4> ₹20/hour</h4>
           <button className="exbutton">BOOK NOW</button>
@@ -77,8 +77,8 @@ const Home = () => {
      </div>
      <div className="exlusiveBikes">
        <div>
-         <h4>Honda Activa 5G</h4>
-         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/255/medium/Suzuki-access-125-2019.png?1563529796"></img>
+         <h4>Suziki Access 125 (2019)</h4>
+         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/255/medium/Suzuki-access-125-2019.png?1563529796" alt="Suzuki 125 "></img>
           <hr></hr>
           <h4> ₹20/hour</h4>
           <button className="exbutton">BOOK NOW</button>
@@ -86,24 +86,24 @@ const Home = () => {
      </div>
      <div className="exlusiveBikes">
        <div>
-         <h4>Honda Activa 5G</h4>
-         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/018/medium/TB_350-min_2.png?1519739776"></img>
+         <h4>Royal Enfield Thunderbird 350</h4>
+         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/018/medium/TB_350-min_2.png?1519739776" alt="Thunderbird"></img>
           <hr></hr>
-          <h4> ₹20/hour</h4>
+          <h4> ₹35/hour</h4>
           <button className="exbutton">BOOK NOW</button>
        </div>
      </div>
      <div className="exlusiveBikes">
        <div>
-         <h4>Honda Activa 5G</h4>
-         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/018/medium/TB_350-min_2.png?1519739776"></img>
+         <h4>Royal Enfield Thunderbird 350</h4>
+         <img src="https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/018/medium/TB_350-min_2.png?1519739776" alt="Thunderbird"></img>
           <hr></hr>
-          <h4> ₹20/hour</h4>
+          <h4> ₹35/hour</h4>
           <button className="exbutton">BOOK NOW</button>
        </div>
      </div>
      </div>
-    
+  <p style={{textAlign:"center"}}>* Excluding of all taxes</p>
     
      <div className="heading">
      <h2 style={{textAlign:"center",color:"#212121"}}>WE BELIEVE IN EQUALITY</h2>
