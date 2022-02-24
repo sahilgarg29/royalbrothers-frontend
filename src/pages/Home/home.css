@@ -45,14 +45,20 @@
 }
 
 .subbutton{
-    background-color: #FED250;
-    margin-left: 420px;
-    border:none;
-    border-radius: 3rem;
+    
+    width: 15%;
+    margin: auto;
     text-align: center;
-    padding: 10px;
+    text-decoration-line: none;
+    background-color: rgb(254,210,80);
+    border: none;
+    border-radius: 20px;
+    margin-left: 30%;
+    padding-bottom: 10px;
+    
 
 }
+
 .subbutton:hover{
     background-color: #FECA32;
     cursor: pointer;

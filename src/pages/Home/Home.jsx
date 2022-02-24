@@ -46,6 +46,7 @@ const Home = () => {
     
     <button className="subbutton">Subscribe now
     <ArrowForwardIcon/>
+      
     </button>
     </div>
      <div className="heading">
