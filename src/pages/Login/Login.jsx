@@ -8,6 +8,7 @@ const Login = () => {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
+  
   return <div>
 
     <div className="ride">
@@ -40,9 +41,9 @@ const Login = () => {
           <p style={{color:"#2680eb",marginLeft:"36px"}}>Forget Password?</p>
         </div>
         <div className="captcha">
-          <div>
-            
-          <p>I'm not a robot</p>
+          <div className="robot">
+  
+          <p >I'm not a robot</p>
           </div>
           <div className="captchalogo">
           <img height="30px" width="30px" src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="captcha"></img>

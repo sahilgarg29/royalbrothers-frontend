@@ -42,12 +42,18 @@
 .captcha{
     height:74px;
     width:85%;
-    border:1px solid black;
+   
     margin-top: 15px;
     margin-left: 18px;
     display: flex;
     font-size: 12px;
+    justify-content: space-between;
+    background-color: #F9F9F9;
     
+}
+.robot{
+    display: flex;
+    font-size: 20px;
 }
 .captchalogo{
     height:30px;
@@ -55,7 +61,7 @@
     
     display: flex;
     flex-direction: column;
-   margin-left: 130px;
+    
    font-size: 11px;
     
     
