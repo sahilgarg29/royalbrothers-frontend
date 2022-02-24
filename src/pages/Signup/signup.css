@@ -1,0 +1,154 @@
+.body{
+    font-family:Muli, sans-serif
+  }
+
+  .signupDiv{
+    height:600px;
+    width:26%;
+    /* border:1px solid black; */
+    margin:auto;
+    margin-top:2%;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+.signupbar{
+    display: flex;
+    height:50px;
+    width:100%;
+    border-bottom: 1px solid grey;
+}
+
+.nameDiv{
+    height:3rem;
+    width:90%;
+    /* border:1px solid black; */
+   margin-top: 10%;
+    margin-left: 4%;
+}
+
+.nameInput{
+    height:50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width:90%;
+    background-color: #F5F5F5;
+    border:none;
+    outline: #FECC00;
+}
+.nameInput:focus {
+    border: 1px solid #FED250;
+  }
+  .emailDiv{
+    height:3rem;
+    width:90%;
+    /* border:1px solid black; */
+   margin-top: 7%;
+    margin-left: 4%;
+  }
+
+  .emailInput{
+    height:50px;
+   
+    margin-left: 10px;
+    width:90%;
+    background-color: #F5F5F5;
+    border:none;
+    outline: #FECC00;
+  }
+  .emailInput:focus {
+    border: 1px solid #FED250;
+  }
+
+  .numberDiv{
+    height:3rem;
+    width:90%;
+    /* border:1px solid black; */
+   
+    margin-left: 4%;
+  }
+
+  .numberInput{
+    height:50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width:90%;
+    background-color: #F5F5F5;
+    border:none;
+    outline: #FECC00;
+  }
+  .numberInput:focus {
+    border: 1px solid #FED250;
+  }
+
+  .passwordDiv{
+    height:3rem;
+    width:90%;
+    /* border:1px solid black; */
+    margin-top:7%;
+    margin-left: 4%;
+    display: flex;
+    
+    
+}
+
+.passwordInput{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width:84%;
+    background-color: #F5F5F5;
+    border:none;
+    outline: #FECC00;
+}
+.passwordInput:focus {
+    border: 1px solid #FED250;
+  }
+
+
+  .signup{
+    width:95%;
+    padding: 4%;
+    background-color: #FECC00;   
+    font-size: 1rem;
+    border:none;
+    border-radius: 6px;
+  margin-top: 7%;
+   margin-left: 6px;
+}
+.signup:hover{
+    cursor:pointer
+}
+
+.signupcaptcha{
+    height:74px;
+    width:85%;
+   
+    margin-top: 10%;
+    margin-left: 18px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border: 1px solid #d3d3d3;
+    
+}
+.signuprobot{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+.signupcaptchalogo{
+    height:30px;
+    width:80px;
+    
+    display: flex;
+    flex-direction: column;
+   
+   font-size: 11px;
+    
+    
+}
+.signupcaptchalogo p:hover{
+    text-decoration: underline;
+}

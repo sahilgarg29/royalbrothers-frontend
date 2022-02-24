@@ -3,7 +3,7 @@ import "./login.css";
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import Checkbox from '@mui/material/Checkbox';
 const Login = () => {
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = React.useState(false);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -42,7 +42,7 @@ const Login = () => {
         </div>
         <div className="captcha">
           <div className="robot">
-  
+          <Checkbox     inputProps={{ 'aria-label': 'controlled' }} />
           <p >I'm not a robot</p>
           </div>
           <div className="captchalogo">

@@ -49,19 +49,22 @@
     font-size: 12px;
     justify-content: space-between;
     background-color: #F9F9F9;
+    border: 1px solid #d3d3d3;
     
 }
 .robot{
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
+    align-items: center;
 }
+
 .captchalogo{
     height:30px;
     width:80px;
     
     display: flex;
     flex-direction: column;
-    
+   
    font-size: 11px;
     
     
@@ -82,11 +85,12 @@
     height:3rem;
     width:90%;
     /* border:1px solid black; */
-    
+   
     margin-left: 4%;
+    
 }
 .emailInput{
-    height: 35px;
+    height:40px;
     margin-top: 5px;
     margin-left: 10px;
     width:90%;
@@ -109,7 +113,7 @@
 }
 
 .passwordInput{
-    height: 35px;
+    height: 40px;
     margin-top: 5px;
     margin-left: 10px;
     width:84%;
@@ -136,7 +140,7 @@
     width:95%;
     padding: 4%;
     background-color: #FECC00;   
-    font-size: 1.1rem;
+    font-size: 1rem;
     border:none;
     border-radius: 6px;
   margin-top: 15px;
@@ -151,7 +155,7 @@
     padding: 4%;
     background-color: #F2F2F2;
    
-    font-size: 1.1rem;
+    font-size: 1rem;
     border:none;
     border-radius: 6px;
   
