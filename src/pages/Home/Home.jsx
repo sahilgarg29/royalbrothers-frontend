@@ -45,7 +45,7 @@ const Home = () => {
      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/RBX_carousel_one-5e5beb3711f8184ba280e0791b058b8b1b4f03cad772f10b0ab39adfc5d06ec5.jpg" alt="subscription banner"></img>
     
     <button className="subbutton">Subscribe now
-    <ArrowForwardIcon/>
+    <ArrowForwardIcon />
       
     </button>
     </div>

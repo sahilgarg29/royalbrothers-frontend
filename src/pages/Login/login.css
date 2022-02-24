@@ -64,13 +64,16 @@
 .captchalogo{
     height:30px;
     width:80px;
-    
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
    
    font-size: 11px;
     
     
+}
+.captchalogo p{
+  margin: 0;
 }
 .captchalogo p:hover{
     text-decoration: underline;

@@ -185,13 +185,17 @@
 .signupcaptchalogo{
     height:30px;
     width:80px;
-    
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
    
    font-size: 11px;
     
     
+}
+
+.signupcaptchalogo p{
+  margin: 0;
 }
 .signupcaptchalogo p:hover{
     text-decoration: underline;
