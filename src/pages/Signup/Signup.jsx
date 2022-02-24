@@ -9,8 +9,8 @@ const Signup = () => {
     </div>
     <div className="signupDiv">
     <div className="signupbar"> 
-          <div className="login">LOGIN</div>
-          <div className="signin">SIGN UP</div>
+          <div className="signuplogin">LOGIN</div>
+          <div className="signupsignin">SIGN UP</div>
          </div>
          <div className="nameDiv">
           

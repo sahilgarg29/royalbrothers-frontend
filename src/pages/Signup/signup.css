@@ -11,11 +11,31 @@
     border-radius: 4px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
+
+.signuplogin{
+    height:30px;
+    width:50%;
+    /* border:1px solid burlywood; */
+    margin-top: 13px;
+    padding:2px;
+    text-align: center;
+    font-weight: 700;
+}
+.signupsignin{
+    height:30px;
+    width:50%;
+    /* border:1px solid burlywood; */
+    padding:2px;
+    margin-top: 13px;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 4px solid #FECC00;
+}
 .signupbar{
     display: flex;
     height:50px;
     width:100%;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #d3d3d3;
 }
 
 .nameDiv{
@@ -34,6 +54,10 @@
     background-color: #F5F5F5;
     border:none;
     outline: #FECC00;
+}
+.nameInput::-webkit-input-placeholder {
+
+   padding-left:15px
 }
 .nameInput:focus {
     border: 1px solid #FED250;
@@ -58,7 +82,10 @@
   .emailInput:focus {
     border: 1px solid #FED250;
   }
+  .emailInput::-webkit-input-placeholder {
 
+    padding-left:15px
+ }
   .numberDiv{
     height:3rem;
     width:90%;
@@ -79,7 +106,10 @@
   .numberInput:focus {
     border: 1px solid #FED250;
   }
+  .numberInput::-webkit-input-placeholder {
 
+    padding-left:15px
+ }
   .passwordDiv{
     height:3rem;
     width:90%;
@@ -103,7 +133,10 @@
 .passwordInput:focus {
     border: 1px solid #FED250;
   }
+  .passwordInput::-webkit-input-placeholder {
 
+    padding-left:15px
+ }
 
   .signup{
     width:95%;
@@ -152,3 +185,5 @@
 .signupcaptchalogo p:hover{
     text-decoration: underline;
 }
+
+
