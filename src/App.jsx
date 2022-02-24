@@ -6,6 +6,9 @@ import Login from "./pages/Login";
 import Search from "./pages/Search";
 import Signup from "./pages/Signup";
 import { Bikes } from "./pages/Bikes/bikesdata";
+import { Offers } from "./pages/offers/offers"
+import { EarnWithUs } from "./pages/partenerwithus/earnwithus/earn";
+import { PartnerWithUs } from "./pages/partenerwithus/ownfranchise/partenerus";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/bikes" element={<Bikes />} />
+        <Route path="/offer" element={<Offers />} />
+        <Route path="/earnwithus" element={<EarnWithUs/>}></Route>
+        <Route path="/partner-with-us" element={<PartnerWithUs/>}></Route>
       </Routes>
     </div>
   );

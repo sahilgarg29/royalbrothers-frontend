@@ -15,19 +15,19 @@ export const Bikes = ()=>{
     const getdata = ()=>{
          axios.get("https://royalbrothers-backend.herokuapp.com/api/bikes").then((resp)=>setdata(resp.data.bikes));
     }
-    const ascnding = ()=>{
-        const ascdata = [...data].sort((a,b)=>{
-            return a.pricePerHour-b.pricePerHour;
-        })
-        // setdata(ascdata)
+    // const ascnding = ()=>{
+    //     const ascdata = [...data].sort((a,b)=>{
+    //         return a.pricePerHour-b.pricePerHour;
+    //     })
+    //     // setdata(ascdata)
         
-    }
-    const descending = ()=>{
-        const ascdata = data.sort((a,b)=>{
-            return b-a;
-        })
-        // setdata(ascdata)
-    }
+    // }
+    // const descending = ()=>{
+    //     const ascdata = data.sort((a,b)=>{
+    //         return b-a;
+    //     })
+    //     // setdata(ascdata)
+    // }
 
     return (
         <div>
@@ -44,8 +44,8 @@ export const Bikes = ()=>{
                     <div className="sortingbtn">
                       <button> Sort by</button>
                       <button>Relevance</button>
-                      <button onClick={ascnding()}>Price Low to High</button>
-                      <button onClick={descending()}>Price High to Low</button>
+                      <button >Price Low to High</button>
+                      <button >Price High to Low</button>
                     </div>
                     
            </div>
