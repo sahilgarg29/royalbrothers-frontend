@@ -172,3 +172,10 @@
 .otp:hover{
     cursor:pointer
 }
+
+@media only screen and (min-width:128px) and (max-width: 900px) {
+    .loginDiv{
+        height:auto;
+        width:auto;
+    }
+}

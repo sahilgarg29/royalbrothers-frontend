@@ -1,5 +1,6 @@
 import React from "react";
 import "./login.css";
+import {Link} from "react-router-dom"
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import Checkbox from '@mui/material/Checkbox';
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
     <div className="loginDiv">
          <div className="loginbar"> 
           <div className="login">LOGIN</div>
-          <div className="signin">SIGN UP</div>
+          <div className="signin">   <Link to="/signup" style={{textDecoration:"none",color:"#9e9e9e"}}>SIGN UP</Link></div>
          </div>
           <p style={{marginLeft:"14px"}}>Email</p>
           <div className="emailDiv">

@@ -1,6 +1,17 @@
 .body{
     font-family:Muli, sans-serif
   }
+  .ride{
+    
+    width:99%;
+   
+    margin: auto;
+    text-align: center;
+    
+    font-size: 24px;
+    font-weight: 500 !important;
+    font-family: "Muli", sans-serif;
+}
 
   .signupDiv{
     height:600px;
@@ -187,3 +198,13 @@
 }
 
 
+@media only screen and (min-width:128px) and (max-width: 900px) {
+       .signupDiv{
+           width:auto;
+           height:auto;
+       }
+       .ride{
+           width:auto;
+           height:auto;
+       }
+  }
