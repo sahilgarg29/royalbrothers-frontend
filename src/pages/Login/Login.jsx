@@ -4,15 +4,15 @@ import {Link} from "react-router-dom"
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import Checkbox from '@mui/material/Checkbox';
 const Login = () => {
-  // const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = React.useState(false);
 
-  // const handleChange = (event) => {
-  //   setChecked(event.target.checked);
-  // };
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
   
   return <div>
 
-    {/* <div className="ride">
+    <div className="ride">
     <p>Rent . Ride . Explore </p>
     </div>
     <div className="loginDiv">
@@ -59,7 +59,7 @@ const Login = () => {
          <p style={{textAlign:"center"}}>OR</p>
          <button className="otp">Login with OTP</button>
        </div>
-     */}
+    
     
     
   </div>;

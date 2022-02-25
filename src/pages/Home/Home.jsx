@@ -9,13 +9,13 @@ import InputLabel from '@mui/material/InputLabel';
 import Box from '@mui/material/Box';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const Home = () => {
-  // const [age, setAge] = React.useState('');
+  const [age, setAge] = React.useState('');
 
-  // const handleChange = (event) => {
-  //   setAge(event.target.value);
-  // };
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return <div>
-     {/* <div className="cashback">
+     <div className="cashback">
        
      </div>
     <div className="vehiclecontainer">
@@ -147,7 +147,7 @@ const Home = () => {
      
      </div>
       
-   <Footer/> */}
+   <Footer/>
   </div>
        
        

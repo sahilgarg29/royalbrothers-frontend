@@ -8,7 +8,7 @@ const Checkout = () => {
 
   return <div>
     
-    {/* <div className="checkoutbar">
+    <div className="checkoutbar">
     <p className="rent">Now rent two wheelers for 4 or 7 days at a lower special price. Click to modify search 
        to <Link to="/search" style={{color:"dodgerblue"}}> 4 days </Link> or <Link to="/search" style={{color:"dodgerblue"}}> 7 days </Link> ( 2 Hours )
     </p>
@@ -105,7 +105,7 @@ const Checkout = () => {
           <button className="makePayment">Make payment</button>
         </div>
       </div>
-    </div> */}
+    </div>
   </div>;
 };
 
