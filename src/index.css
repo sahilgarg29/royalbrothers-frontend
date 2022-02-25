@@ -16,9 +16,23 @@ body {
 :root {
   --primary-color: #fed250;
   --primary-color-dark: #fec51d;
+  --border-color: #eee;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.color-primary {
+  color: var(--primary-color);
 }

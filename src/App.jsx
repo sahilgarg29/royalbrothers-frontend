@@ -6,13 +6,15 @@ import Login from "./pages/Login";
 import Search from "./pages/Search";
 import Signup from "./pages/Signup";
 import { Bikes } from "./pages/Bikes/bikesdata";
-import { Offers } from "./pages/offers/offers"
+import { Offers } from "./pages/offers/offers";
 import { EarnWithUs } from "./pages/partenerwithus/earnwithus/earn";
 import { PartnerWithUs } from "./pages/partenerwithus/ownfranchise/partenerus";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
@@ -21,8 +23,8 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/bikes" element={<Bikes />} />
         <Route path="/offer" element={<Offers />} />
-        <Route path="/earnwithus" element={<EarnWithUs/>}></Route>
-        <Route path="/partner-with-us" element={<PartnerWithUs/>}></Route>
+        <Route path="/earnwithus" element={<EarnWithUs />}></Route>
+        <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
       </Routes>
     </div>
   );

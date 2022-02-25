@@ -1,262 +1,278 @@
-.headbikes{
-    width: 100%;
-    background-color: rgb(254,210,80);
-    text-align: center;
-    padding: 0.5%;
+.headbikes {
+  width: 100%;
+  background-color: rgb(254, 210, 80);
+  text-align: center;
+  padding: 0.5%;
 }
-.headbikes>p{
-    font-size: 12px;
+.headbikes > p {
+  font-size: 12px;
 }
-.headbikes>p>span{
-    color: blue;
-    text-decoration: underline;
-}
-
-.sorthead{
-    display: flex;
-    height: 35px;
-}
-.sorthead>div>p{
-    font-size:18px;
-    font-weight:700;
-   
-    margin-left: 50%;
-}
-.sortingbtn{
-    display: flex;
-    margin-left: 25%;
+.headbikes > p > span {
+  color: blue;
+  text-decoration: underline;
 }
 
-.sortingbtn>button{
-    border: none;
-    font-size:11px;
-    font-weight:500;
-    background-color: white;
-     vertical-align:baseline;
+.sorthead {
+  display: flex;
+  /* height: 35px; */
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+}
+.sorthead > div > p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
-
-.container{
-    display: flex;
-    gap: 1%;
+.filter-heading {
+  width: 25%;
 }
 
+.sortingbtn {
+  margin-left: 20px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
 
+.sortingbtn > button {
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer;
+  /* vertical-align: baseline; */
+}
 
-.firstmain{
-    width: 100%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    /* height: 400px; */
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 60vh;
+.sortingbtn .btn-active {
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 3px;
+}
 
-     /* position: fixed;
+.container {
+  display: flex;
+  gap: 1%;
+}
+
+.container > div:first-child {
+  width: 25%;
+}
+
+.filter-container h5 {
+  margin-top: 20px;
+}
+
+.firstmain {
+  margin-left: 10px;
+  /* margin-top: 30px; */
+  /* width: 100%; */
+  /* padding-left: 1.5%; */
+  padding-right: 1.5%;
+  /* height: 400px; */
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 70vh;
+
+  /* position: fixed;
     position: sticky;  */
 }
 
-.firstmain>div>div>h6{
-    font-size:12.8px;
-    line-height:19.2px;
-    font-weight:700;
-    vertical-align:baseline;
+.firstmain > div > div > h6 {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 19.2px;
+  font-weight: 700;
+  vertical-align: baseline;
 }
-.firstmain>div>div>p{
-    font-size:12.8px;
-    line-height:19.2px;
-    font-weight:400;
-    vertical-align:baseline;
+.firstmain > div > div > p {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 400;
+  vertical-align: baseline;
 }
-.datetime{
-    display: flex;
-    gap: 30%;
+.datetime {
+  display: flex;
+  gap: 30%;
 }
-.Dateandtime{
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    /* border: 1px solid green; */
-    line-height: 0px;
+.Dateandtime {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  /* border: 1px solid green; */
+  line-height: 0px;
 }
-.Dateandtime>label{
-    font-size:12.8px;
-    line-height:19.2px;
-    font-weight:500;
-    vertical-align:baseline;
+.Dateandtime > label {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 500;
+  vertical-align: baseline;
 }
-.Dateandtime>input{
-    border: none;
-    border-bottom: solid 1px black;
-    margin-right: 5%;
-    width: 40%;
-}
-
-.searching>h6{
-    font-size:12.8px;
-    line-height:19.2px;
-    font-weight:700;
-    vertical-align:baseline;
+.Dateandtime > input {
+  border: none;
+  border-bottom: solid 1px black;
+  margin-right: 5%;
+  width: 40%;
 }
 
-.overflow{
-    margin-top: 5%;
-    height: 100px;
-    overflow: scroll;
-}
-.overflow>div>p{
-    font-size:12.8px;
-    line-height:7px;
-    font-weight:400;
-    vertical-align:baseline;
+.searching > h6 {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 700;
+  vertical-align: baseline;
 }
 
-.overflow>div{
-    display: inline;
-
+.overflow {
+  margin-top: 5%;
+  height: 100px;
+  overflow: scroll;
 }
-.overflow>div>input{
-    display: inline-block;
-}
-.overflow>div>p{
-    display: inline-block;
-}
-.applyfilter{
- width: 90%;
- margin: auto;
- padding: 3%;
- background-color: rgb(254,210,80);
- border: none;
- border-radius: 20px;
- margin-left: 2%;
+.overflow > div > p {
+  font-size: 12.8px;
+  line-height: 7px;
+  font-weight: 400;
+  vertical-align: baseline;
 }
 
-
-
-
-
-
-.secoundmain{
-    width: 70%;
-    /* border: 1px solid black; */
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    overflow: scroll;
-    height: 150vh;
+.overflow > div {
+  display: inline;
 }
-.secoundmain>div{
-    display: flex;
-    gap: 3%;
-    flex-wrap: wrap;
+.overflow > div > input {
+  display: inline-block;
 }
-.mapbikes{
-    /* border: 1px solid red; */
-    width: 28%;
-    margin-top: 5%;
-    text-align: center;
-    padding: 1.5%;
-    padding-bottom: 0.5%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.mapbikes>p{
-    float: left;
-   font-size: 10px;
-   margin-top: -1%;
-}
-.mapbikes>h6{
-    font-size: 15px;
-    font-weight:700;
-text-align:center;
-}
-.mapbikes>img{
-    /* height: 35%; */
-    width: 70%;
-}
-.mapbikes>span{
-    font-size: 10px;
-}
-.mapbikes>select{
-    width: 95%;
-    border: none;
-    border-bottom: 1px solid black;
-}
-.timingbike{
-    display: flex;
-    gap: 20%;
-    /* height: 15%; */
-    padding: 3%;
-}
-.timingbike>div{
-    font-size: 10px;
-}
-.timingTo{
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    width: 25%;
-    height: 25px;
-    text-align: center;
-    padding-top: 2%;
-    margin-top: 10%;
-}
-.prizebike{
-    display: flex;
-    gap: 30%;
-    font-size: 10px;
-    /* height: 20px; */
-    padding: 2%;
-    margin-top: -20px;
-    margin-bottom: 10px;
+.overflow > div > p {
+  display: inline-block;
 }
 
-.prizebike>div{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-.prizebike>div>p{
-    font-size: 15px;
-}
-.prizebike>div>span{
-    font-size: 8px;
-    margin-top: -15px;
-}
-.prizebike>div>button{
-    height: 100%;
-    background-color: rgb(254,210,80);
-    margin-top: 15px;
-    border: none;
-    border-radius: 5px;
+.applyfilter {
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  padding: 3%;
+  background-color: rgb(254, 210, 80);
+  border: none;
+  border-radius: 20px;
+  margin-left: 2%;
 }
 
+.secoundmain {
+  width: 100%;
+  /* border: 1px solid black; */
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  /* overflow: scroll;
+  height: 150vh; */
+}
+.secoundmain > div {
+  display: flex;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+.mapbikes {
+  /* border: 1px solid red; */
+  width: 28%;
+  margin-top: 5%;
+  text-align: center;
+  padding: 1.5%;
+  padding-bottom: 0.5%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.mapbikes > p {
+  float: left;
+  font-size: 10px;
+  margin-top: -1%;
+}
+.mapbikes > h6 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.mapbikes > img {
+  /* height: 35%; */
+  width: 70%;
+}
+.mapbikes > span {
+  font-size: 10px;
+}
+.mapbikes > select {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.timingbike {
+  display: flex;
+  gap: 20%;
+  /* height: 15%; */
+  padding: 3%;
+}
+.timingbike > div {
+  font-size: 10px;
+}
+.timingTo {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: 25px;
+  text-align: center;
+  padding-top: 2%;
+  margin-top: 10%;
+}
+.prizebike {
+  display: flex;
+  gap: 30%;
+  font-size: 10px;
+  /* height: 20px; */
+  padding: 2%;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
 
+.prizebike > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.prizebike > div > p {
+  font-size: 15px;
+}
+.prizebike > div > span {
+  font-size: 8px;
+  margin-top: -15px;
+}
+.prizebike > div > button {
+  height: 100%;
+  background-color: rgb(254, 210, 80);
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 1020px) {
-    .firstmain{
-      display: none;
-    }
-    .secoundmain{
-        width: 90%;
-    }
-    .mapbikes{
-        width: 45%; 
-    }
+  .firstmain {
+    display: none;
   }
-
-
-  @media only screen and (max-width: 610px) {
-    .firstmain{
-      display: none;
-    }
-    .secoundmain{
-        width: 90%;
-    }
-    .mapbikes{
-        width: 90%; 
-        margin: auto;
-    }
-    .applyfilter{
-        display: none;
-    }
+  .secoundmain {
+    width: 90%;
   }
+  .mapbikes {
+    width: 45%;
+  }
+}
 
+@media only screen and (max-width: 610px) {
+  .firstmain {
+    display: none;
+  }
+  .secoundmain {
+    width: 90%;
+  }
+  .mapbikes {
+    width: 90%;
+    margin: auto;
+  }
+  .applyfilter {
+    display: none;
+  }
+}
