@@ -4,8 +4,8 @@ import {Link} from "react-router-dom"
 import { TextField } from "@mui/material";
 import Button from '@mui/material/Button';
 import {useState} from "react"
-const Checkout = () => {
-  const [helmet,setHelmet]=useState(1)
+// const Checkout = () => {
+
   return <div>
     
     <div className="checkoutbar">
@@ -109,4 +109,4 @@ const Checkout = () => {
   </div>;
 };
 
-export default Checkout;
+// export default Checkout;
