@@ -1,0 +1,36 @@
+.datetime-picker {
+  max-width: 22rem;
+  border: 1px solid black;
+  padding: 20px 10px;
+}
+
+.datetime-picker h2 {
+  margin-bottom: 20px;
+}
+
+.datetime-picker p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.datetime-picker .datepicker {
+  width: 100%;
+  padding: 5px;
+  border: 0.0625rem solid #ebebeb;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.datetime-picker .search-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 7px 2px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.datetime-picker .search-btn:hover {
+  background-color: var(--primary-color-dark);
+}
