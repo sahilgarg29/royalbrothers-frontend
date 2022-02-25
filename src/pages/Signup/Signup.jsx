@@ -5,7 +5,7 @@ import Checkbox from '@mui/material/Checkbox';
 import {Link} from "react-router-dom"
 const Signup = () => {
   return <div>
-      <div className="ride">
+      {/* <div className="ride">
     <p>Rent . Ride . Explore </p>
     </div>
     <div className="signupDiv">
@@ -48,7 +48,7 @@ const Signup = () => {
         
         </div>
         <button className="signup">Sign Up</button>
-  </div>;
+  </div>; */}
   </div>
 };
 
