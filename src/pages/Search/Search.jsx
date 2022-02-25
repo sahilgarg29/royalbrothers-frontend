@@ -25,7 +25,7 @@ const Search = () => {
     // let diffInMill = new Date(dropoffTime) - new Date(pickupTime);
 
     // console.log(Math.round(Math.abs(diffInMill) / 36e5));
-  }, [searchParams]);
+  }, []);
 
   const onBookClick = (bike, location) => {
     dispatch(
@@ -45,10 +45,20 @@ const Search = () => {
       searchParams.get("pickuptime") !== pickupDate ||
       searchParams.get("dropofftime") !== dropoffDate
     ) {
-      setSearchParams({ pickuptime: pickupDate, dropofftime: dropoffDate });
-    }
+      // console.log(pickupDate.toISOString(), dropoffDate);
 
-    if (selectedBikes) {
+      // setSearchParams({
+      //   pickuptime: pickupDate.toISOString().toString(),
+      //   dropofftime: dropoffDate.toISOString(),
+      // });
+
+      dispatch(
+        fetchAllBikes(
+          selectedCity,
+          pickupDate.toISOString(),
+          dropoffDate.toISOString()
+        )
+      );
     }
   };
 

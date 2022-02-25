@@ -43,7 +43,7 @@ export const addAllBikes = (payload) => {
 export const fetchAllBikes = (city, pickupTime, dropoffTime) => (dispatch) => {
   axios
     .get(
-      `https://royalbrothers-backend.herokuapp.com/api/bikes?city=${city}&pickuptime${pickupTime}&dropofftime=${dropoffTime}`
+      `https://royalbrothers-backend.herokuapp.com/api/bikes?city=${city}&pickuptime=${pickupTime}&dropofftime=${dropoffTime}`
     )
     .then((res) => {
       console.log(res);
@@ -104,7 +104,7 @@ export const addOrderID = (payload) => {
 export const placeBookingOrder = () => (dispatch, getState) => {
   const store = getState();
   const state = store.booking;
-
+  console.log(state);
   axios
     .post(
       "https://royalbrothers-backend.herokuapp.com/api/book",

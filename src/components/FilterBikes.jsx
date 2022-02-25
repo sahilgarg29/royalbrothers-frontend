@@ -65,11 +65,7 @@ const FilterBikes = ({
 
       <button
         onClick={() =>
-          handleApplyFilters(
-            pickupDate.toISOString(),
-            dropoffDate.toISOString(),
-            selectedBikes
-          )
+          handleApplyFilters(pickupDate, dropoffDate, selectedBikes)
         }
       >
         Apply Filters
