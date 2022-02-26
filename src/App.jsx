@@ -10,6 +10,7 @@ import { Offers } from "./pages/offers/offers";
 import { EarnWithUs } from "./pages/partenerwithus/earnwithus/earn";
 import { PartnerWithUs } from "./pages/partenerwithus/ownfranchise/partenerus";
 import Header from "./components/Header";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/earnwithus" element={<EarnWithUs />}></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

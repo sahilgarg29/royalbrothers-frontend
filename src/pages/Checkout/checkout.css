@@ -1,0 +1,325 @@
+.body {
+  font-family: Muli, sans-serif;
+}
+
+.checkoutbar {
+  height: 40px;
+  width: 100%;
+
+  background-color: #fed250;
+}
+.rent {
+  text-align: center;
+  padding-top: 12px;
+  color: #000;
+  font-weight: 450;
+}
+
+.checkoutContainer {
+  height: 470px;
+  width: 80%;
+
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+}
+.productSummary {
+  height: 440px;
+  width: 650px;
+  /* border:1px solid red; */
+  margin-top: 5px;
+  margin-left: 5px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.checkoutCard {
+  height: 370px;
+  width: 340px;
+  /* border:1px solid coral; */
+  margin-top: 8px;
+  margin-left: 6px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.summaryHeader {
+  color: rgba(0, 0, 0, 0.87);
+
+  height: 35px;
+  width: 90%;
+  margin-top: 2px;
+  padding-left: 1.33rem;
+  margin-left: 2px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.summaryContainer {
+  display: flex;
+  /* border:1px solid teal; */
+}
+.checkoutProduct {
+  height: 180px;
+  width: 200px;
+  margin-left: 4px;
+  margin-top: 120px;
+  /* border:1px solid red; */
+  text-align: center;
+  font-size: 20px;
+  line-height: 2px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.checkoutProduct img {
+  height: auto;
+  width: 190px;
+  /* border:1px solid green */
+}
+.priceContainer {
+  height: 400px;
+  width: 85%;
+  padding-right: 12px;
+  /* border: 1px solid purple */
+}
+
+.dateTime {
+  height: 55px;
+  width: 98%;
+  border-bottom: 1px solid rgb(228, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  line-height: 5px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+}
+.toDiv {
+  margin-top: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.checkoutAddress {
+  margin-top: 13px;
+  height: 40px;
+  width: 98%;
+  border-bottom: 1px solid rgb(228, 225, 225);
+  line-height: 7px;
+  margin-left: 3px;
+  font-size: 14px;
+  color: #555;
+}
+.charges {
+  height: 40px;
+  width: 98%;
+  top: 0;
+  font-size: 14px;
+  display: flex;
+  color: #555;
+  margin-left: 3px;
+  border-bottom: 1px solid rgb(228, 225, 225);
+
+  justify-content: space-between;
+}
+
+.totalCharges {
+  height: 40px;
+  width: 98%;
+
+  display: flex;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #555;
+
+  justify-content: space-between;
+}
+.helmet {
+  height: 35px;
+  width: 98%;
+  display: flex;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.couponCode {
+  display: flex;
+  height: 40px;
+  width: 98%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.couponInput {
+  border: none;
+  width: 300px;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.couponInput::-webkit-input-placeholder {
+  font-size: 15px;
+  color: rgb(179, 176, 176);
+}
+.couponApply {
+  font-size: 15px;
+  height: 40px;
+  width: 140px;
+  background-color: rgb(254, 210, 80);
+  border-radius: 5px;
+  border: none;
+}
+.couponApply:hover {
+  background-color: #feca32;
+  cursor: pointer;
+}
+
+.limit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  height: 35px;
+  width: 98%;
+  margin-left: 3px;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.kmCharge {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  width: 98%;
+  margin-top: 0;
+  margin-left: 3px;
+  color: #555;
+  font-size: 14px;
+}
+
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.bookingfee {
+  height: 40px;
+  width: 85%;
+  /* border:1px solid red; */
+  display: flex;
+  color: #555;
+  margin-left: 24px;
+
+  justify-content: space-between;
+}
+
+.cgst {
+  display: flex;
+  height: 40px;
+  width: 85%;
+  /* border:1px solid red; */
+  display: flex;
+  color: #555;
+  margin-left: 24px;
+
+  justify-content: space-between;
+}
+
+.sgst {
+  display: flex;
+  height: 40px;
+  width: 85%;
+  /* border:1px solid red; */
+  display: flex;
+  color: #555;
+  margin-left: 24px;
+
+  justify-content: space-between;
+}
+
+.refundable {
+  display: flex;
+  height: 40px;
+  width: 85%;
+  /* border:1px solid red; */
+  display: flex;
+  color: #555;
+  margin-left: 24px;
+
+  justify-content: space-between;
+}
+
+.payableAmnt {
+  display: flex;
+  height: 40px;
+  width: 85%;
+  font-size: 15px;
+  /* border:1px solid red; */
+  display: flex;
+  color: #555;
+  font-weight: 700;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.makePayment {
+  height: 40px;
+  width: 85%;
+  margin: auto;
+  background-color: rgb(254, 210, 80);
+  border-radius: 5px;
+  border: none;
+}
+
+.makePayment:hover {
+  background-color: #feca32;
+  cursor: pointer;
+}
+
+.rupee {
+  margin-top: 16px;
+}
+.rupee img {
+  height: 12px;
+  width: 12px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+  .checkoutbar {
+    height: auto;
+    margin: auto;
+    width: auto;
+  }
+
+  .checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .summaryHeader {
+    display: none;
+  }
+  .summaryContainer {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid teal; */
+    height: 550px;
+  }
+  .checkoutProduct {
+    margin-top: 0;
+    height: 50%;
+    width: 60%;
+  }
+  .productSummary {
+    height: 550px;
+    padding-left: 5px;
+  }
+  .priceContainer {
+    /* border:1px solid red; */
+    height: 500px;
+    width: 53%;
+    margin-top: 0;
+  }
+  .checkoutCard {
+    height: 500px;
+    width: 90%;
+  }
+}
