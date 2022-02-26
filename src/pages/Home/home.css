@@ -1,0 +1,130 @@
+.body {
+  font-family: Muli, sans-serif;
+}
+
+.cashback {
+  background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_offer_web-c67cc7e8c890d5646866f59ad171f7bbc7ca6c6be6ce5d486062b4cbc8e0f79e.jpg");
+  position: relative;
+  background-position: 60%;
+  background-size: cover;
+  height: 550px;
+  width: 99%;
+  max-width: 100%;
+  margin: auto;
+}
+.vehiclecontainer {
+  display: flex;
+
+  width: 80%;
+  margin: auto;
+}
+.vehicleinfo {
+  display: flex;
+  width: 23%;
+  margin: auto;
+  gap: 5%;
+}
+.vehicleinfo img {
+  height: 60%;
+  margin-top: 4%;
+}
+
+.subscription {
+  height: auto;
+  width: 99%;
+  /* border:1px solid red; */
+  margin: auto;
+}
+.subscription img {
+  height: 100%;
+  width: 100%;
+}
+
+.subbutton {
+  width: 15%;
+  margin: auto;
+  text-align: center;
+  text-decoration-line: none;
+  background-color: rgb(254, 210, 80);
+  border: none;
+  border-radius: 20px;
+  margin-left: 30%;
+  padding-bottom: 10px;
+}
+
+.subbutton:hover {
+  background-color: #feca32;
+  cursor: pointer;
+}
+.newsImage {
+  display: flex;
+  margin-left: 10%;
+}
+.newsImage div {
+  height: 80px;
+
+  border: 1px solid #efefef;
+  width: 19%;
+  padding: 2%;
+}
+.newsImage div img {
+  height: 100%;
+  width: 100%;
+}
+.yellowbox {
+  width: 3%;
+  height: 5px;
+  background-color: #fed250;
+  margin: auto;
+  border-radius: 2%;
+}
+.heading {
+  margin-top: 8%;
+  line-height: 2px;
+  margin-bottom: 3%;
+}
+
+.duration {
+  float: right;
+  display: flex;
+  margin-right: 10%;
+  gap: 8%;
+  margin-bottom: 3%;
+}
+.excontainer {
+  display: flex;
+
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.excontainer:hover {
+  cursor: pointer;
+}
+.exlusiveBikes {
+  width: 23%;
+  color: #202021;
+  text-align: center;
+  background-color: #f7fafc;
+
+  border-radius: 2%;
+}
+/* .excontainer .exlusiveBikes:nth-child(4){
+  background: rgba(0,0,0,0.5);
+ 
+} */
+
+.exbutton {
+  width: 100%;
+  padding: 5%;
+  background-color: #fed250;
+  font-weight: 550;
+  font-size: 14px;
+  border: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.exbutton:hover {
+  cursor: pointer;
+}

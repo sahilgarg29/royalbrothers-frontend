@@ -1,7 +1,13 @@
 .datetime-picker {
   max-width: 22rem;
-  border: 1px solid black;
-  padding: 20px 10px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0 1.0667rem 2.6667rem rgb(0 0 0 / 12%);
+  background-color: white;
+  position: relative;
+  top: 100px;
+  left: 100px;
 }
 
 .datetime-picker h2 {
@@ -29,6 +35,7 @@
   margin-top: 20px;
   font-size: 1.1rem;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .datetime-picker .search-btn:hover {
