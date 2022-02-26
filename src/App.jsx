@@ -11,8 +11,17 @@ import { EarnWithUs } from "./pages/partenerwithus/earnwithus/earn";
 import { PartnerWithUs } from "./pages/partenerwithus/ownfranchise/partenerus";
 import Header from "./components/Header";
 import { Footer } from "./components/footer";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { fetchAllLocations } from "./redux/actions";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAllLocations());
+  }, []);
+
   return (
     <div>
       <Header />

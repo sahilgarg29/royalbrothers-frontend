@@ -135,7 +135,7 @@
 }
 
 .overflow > div {
-  display: inline;
+  display: block;
 }
 .overflow > div > input {
   display: inline-block;

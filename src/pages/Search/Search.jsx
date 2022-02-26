@@ -15,9 +15,12 @@ import "../Bikes/bikesdata.css";
 
 const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [selectedLocations, setSelectedLocations] = useState([]);
   const [pickupDate, setpickupDate] = useState(
     new Date(searchParams.get("pickuptime"))
   );
+
+  const locations = useSelector((store) => store.locations);
   const [dropoffDate, setdropoffDate] = useState(
     new Date(searchParams.get("dropofftime"))
   );
@@ -50,10 +53,20 @@ const Search = () => {
     navigate("/checkout");
   };
 
-  const onFiltersApply = (selectedBikes) => {
+  const handleLocationFilter = (e) => {
+    if (e.target.checked) {
+      setSelectedLocations((prev) => [...prev, e.target.value]);
+    } else {
+      setSelectedLocations((prev) =>
+        prev.filter((location) => location != e.target.value)
+      );
+    }
+  };
+
+  const onFiltersApply = () => {
     if (
-      searchParams.get("pickuptime") !== pickupDate ||
-      searchParams.get("dropofftime") !== dropoffDate
+      searchParams.get("pickuptime") !== pickupDate.toISOString() ||
+      searchParams.get("dropofftime") !== dropoffDate.toISOString()
     ) {
       // console.log(pickupDate.toISOString(), dropoffDate);
 
@@ -67,6 +80,19 @@ const Search = () => {
           selectedCity,
           pickupDate.toISOString(),
           dropoffDate.toISOString()
+        )
+      );
+    }
+
+    if (selectedLocations.length > 0) {
+      let lcString = selectedLocations.join(",").replaceAll(" ", "+");
+
+      dispatch(
+        fetchAllBikes(
+          selectedCity,
+          pickupDate.toISOString(),
+          dropoffDate.toISOString(),
+          lcString
         )
       );
     }
@@ -201,83 +227,22 @@ const Search = () => {
             </Paper>
 
             <div className="overflow">
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Yamaha Fascino</p>{" "}
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Honda Dio</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>TVS hexal Heavy Duty</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Hero mastreo</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Honda Activa 4G</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Honda Activa 5G</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Aprilia SR 125</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p> Yobykes Drift (electric)</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p> TVS Ntorq 125</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p>Ather 450</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p> Pure EV Epluto (electric)</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p> Honda Activa 6G</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" />{" "}
-                <p>Royal Enfield Himalayan Gravel Grey</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" />{" "}
-                <p>Royal Enfield Classic 350 Reborn</p>
-              </div>
-              <br />
-              <div>
-                {" "}
-                <input type="checkbox" /> <p> TVS Apache RTR 180 (BS6)</p>
-              </div>
-              <br />
+              {locations.map((location) => {
+                return (
+                  <div key={location._id}>
+                    <input
+                      type="checkbox"
+                      name={location.name}
+                      id={location.name}
+                      value={location.name}
+                      checked={selectedLocations.includes(location.name)}
+                      onChange={(e) => handleLocationFilter(e)}
+                    />
+
+                    <label htmlFor={location.name}>{location.name}</label>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

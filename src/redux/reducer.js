@@ -2,9 +2,11 @@ import { loadData, saveData } from "../utils/localStorage";
 import {
   ADD_ALL_BIKES,
   ADD_ALL_CITIES,
+  ADD_ALL_LOCATIONS,
   ADD_BOOKING,
   ADD_ORDER_ID,
   ADD_USER,
+  DELETE_CITY,
   SELECT_CITY,
 } from "./actionTypes";
 
@@ -18,6 +20,9 @@ export const cityReducer = (state = cityState, action) => {
     case SELECT_CITY:
       saveData("selectedCity", action.payload);
       return { ...state, selectedCity: action.payload };
+    case DELETE_CITY:
+      localStorage.removeItem("selectedCity");
+      return { ...state, selectedCity: null };
     case ADD_ALL_CITIES:
       return { ...state, allCities: action.payload };
     default:
@@ -70,6 +75,17 @@ export const bookingReducer = (state = bookingState, action) => {
         orderId: action.payload.orderId,
         amount: action.payload.amount,
       };
+    default:
+      return state;
+  }
+};
+
+const locationState = [];
+
+export const locationReducer = (state = locationState, action) => {
+  switch (action.type) {
+    case ADD_ALL_LOCATIONS:
+      return action.payload;
     default:
       return state;
   }

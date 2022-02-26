@@ -1,14 +1,20 @@
 import React from "react";
 import { ImLocation2 } from "react-icons/im";
 import { BsChevronDown } from "react-icons/bs";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { CgProfile } from "react-icons/cg";
 import "./header.css";
 import { Link } from "react-router-dom";
+import { deleteCity } from "../../redux/actions";
 
 const Header = () => {
   const city = useSelector((store) => store.cities.selectedCity);
   const user = useSelector((store) => store.user);
+  const dispatch = useDispatch();
+
+  const handleChangeLocation = () => {
+    dispatch(deleteCity());
+  };
 
   const renderLogin = () => {
     if (user.token) {
@@ -62,7 +68,7 @@ const Header = () => {
           </li>
         </ul>
         <div id="header-right">
-          <div id="location-btn">
+          <div id="location-btn" onClick={handleChangeLocation}>
             <ImLocation2 className="color-primary" />
             {city}
             <BsChevronDown />

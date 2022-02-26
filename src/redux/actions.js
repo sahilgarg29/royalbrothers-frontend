@@ -2,9 +2,11 @@ import axios from "axios";
 import {
   ADD_ALL_BIKES,
   ADD_ALL_CITIES,
+  ADD_ALL_LOCATIONS,
   ADD_BOOKING,
   ADD_ORDER_ID,
   ADD_USER,
+  DELETE_CITY,
   SELECT_CITY,
 } from "./actionTypes";
 
@@ -12,6 +14,12 @@ export const selectCity = (payload) => {
   return {
     type: SELECT_CITY,
     payload,
+  };
+};
+
+export const deleteCity = () => {
+  return {
+    type: DELETE_CITY,
   };
 };
 
@@ -40,16 +48,18 @@ export const addAllBikes = (payload) => {
   };
 };
 
-export const fetchAllBikes = (city, pickupTime, dropoffTime) => (dispatch) => {
-  axios
-    .get(
-      `https://royalbrothers-backend.herokuapp.com/api/bikes?city=${city}&pickuptime=${pickupTime}&dropofftime=${dropoffTime}`
-    )
-    .then((res) => {
+export const fetchAllBikes =
+  (city, pickupTime, dropoffTime, locations) => (dispatch) => {
+    let url = `https://royalbrothers-backend.herokuapp.com/api/bikes?city=${city}&pickuptime=${pickupTime}&dropofftime=${dropoffTime}`;
+    if (locations) {
+      url = url + `&locations=${locations}`;
+    }
+
+    axios.get(url).then((res) => {
       console.log(res);
       dispatch(addAllBikes(res.data.bikes));
     });
-};
+  };
 
 export const addUser = (payload) => {
   return {
@@ -130,5 +140,24 @@ export const placeBookingOrder = () => (dispatch, getState) => {
     })
     .catch((err) => {
       console.log(err.response);
+    });
+};
+
+const addAllLocations = (payload) => {
+  return {
+    type: ADD_ALL_LOCATIONS,
+    payload,
+  };
+};
+
+export const fetchAllLocations = () => (dispatch) => {
+  axios
+    .get("https://royalbrothers-backend.herokuapp.com/api/locations")
+    .then((res) => {
+      console.log(res);
+      dispatch(addAllLocations(res.data.locations));
+    })
+    .catch((err) => {
+      console.log(err);
     });
 };

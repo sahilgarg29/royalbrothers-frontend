@@ -1,22 +1,20 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { fetchAllCities, selectCity } from "../redux/actions";
+import "./citySearch.css";
 import { FaSearch } from "react-icons/fa";
-import { City } from "./City";
+import React from "react";
 
-const SelectCity = () => {
-  const dispatch = useDispatch();
-  const cities = useSelector((store) => store.cities.allCities);
-
-  useEffect(() => {
-    dispatch(fetchAllCities());
-    console.log(cities);
+function CitySearch() {
+  const [cityData, setCityData] = React.useState([]);
+  React.useEffect(() => {
+    fetch("https://royalbrothers-backend.herokuapp.com/api/cities")
+      .then((res) => res.json())
+      .then((res) => {
+        setCityData(res.cities);
+      });
   }, []);
 
-  const handleSelectCity = (cityName) => {
-    dispatch(selectCity(cityName));
-  };
+  function cityNameFun(e) {
+    console.log(e);
+  }
 
   return (
     <section id="citySearchSection">
@@ -44,14 +42,10 @@ const SelectCity = () => {
 
         {/* City Names Div */}
         <div id="cityNameDiv">
-          {cities.map((city) => {
+          {cityData.map((city) => {
             return (
               <>
-                <div
-                  id="cityDiv"
-                  onClick={() => handleSelectCity(city.name)}
-                  key={city._id}
-                >
+                <div id="cityDiv" onClick={() => cityNameFun(city)}>
                   <img className="cityImage" src={city.imageUrl}></img>
                   <h3 className="cityName">{city.name}</h3>
                 </div>
@@ -66,14 +60,6 @@ const SelectCity = () => {
       </div>
     </section>
   );
+}
 
-  // return (
-  //   <div>
-  //     {cities.map((city) => (
-  //       <City key={city._id} city={city} selectCity={handleSelectCity} />
-  //     ))}
-  //   </div>
-  // );
-};
-
-export default SelectCity;
+export default CitySearch;

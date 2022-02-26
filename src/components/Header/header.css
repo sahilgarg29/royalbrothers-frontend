@@ -40,6 +40,11 @@ nav > ul img {
   padding: 10px 10px;
   border-radius: 4px;
   margin-right: 30px;
+  cursor: pointer;
+}
+
+#location-btn:hover {
+  background-color: var(--primary-color);
 }
 
 #header-right {
@@ -74,4 +79,8 @@ nav > ul img {
 .colored-btn {
   background-color: var(--primary-color);
   border-radius: 4px;
+}
+
+.dropdown:hover {
+  background-color: var(--primary-color);
 }
