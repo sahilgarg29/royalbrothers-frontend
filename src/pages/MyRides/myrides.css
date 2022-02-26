@@ -1,0 +1,84 @@
+.body{
+    font-family:Muli, sans-serif
+  }
+.rideSafe{
+    height:250px;
+    width:100%;
+    position: relative;
+   
+}
+.wearHelmet{
+    position: absolute;
+
+  bottom: -30px;
+
+  text-align: center;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  font-size: small;
+  
+    
+}
+.rideSafe img{
+    width:100%
+}
+.MyRidescontainer{
+    height:400px;
+    width:50%;
+
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.activeTrips{
+    padding-left: 20px;
+    font-size: 20px;
+}
+.active_vehicle{
+    height:145px;
+    width:38%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    margin: auto;
+   
+}
+.active_vehicle img{
+  
+    padding: 5px;
+}
+
+.vehicle_time{
+    height:60px;
+    width:38%;
+    /* border:1px solid red; */
+    margin: auto;
+    font-weight: 700;
+}
+.rideAddress{
+    height:50px;
+    width:45%;
+    margin: auto;
+    /* border: 1px solid red; */
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.rideAmount{
+    height:45px;
+    width:40%;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    margin: auto;
+  gap:5%;
+justify-content: center;
+padding-bottom: 5px;
+   background-color: rgb(254,210,80);
+   border-radius: 5px;
+}
+
+.rideAmount:hover{
+    background-color: #FECA32;
+    cursor: pointer;
+}
