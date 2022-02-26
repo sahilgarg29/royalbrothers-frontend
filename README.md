@@ -28,6 +28,7 @@ choose the bike and pay the amount. Finally, you reserved your bike.
 # Home Page
 In Home Page, you can book your bike ride by providing some details like your pickup date and dropoff date.
 And you can also find some more details like when they highlighted in National News Papers and milestones which are achieved by **RoyalBrothers**
+<a href="./readmeImages/home.png"></a>
 # Sign-Up & Sign-In Page
 If you have account with Royal Brothers, please click on **Login** Button on top right side of the home page to login into your account.
 
