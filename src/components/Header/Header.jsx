@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { BsChevronDown } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,24 +26,26 @@ const Header = () => {
       );
     }
 
-  //   return (
-  //     <div id="header-login-signup">
-  //       <Link to="/login">Login</Link>
-  //       <Link className="colored-btn" to="/signup">
-  //         Sign up
-  //       </Link>
-  //     </div>
-  //   );
-  // };
-  return (
-    <div id="header-login-signup">
-      <Link to="/login">Login</Link>
-      <Link className="colored-btn" to="/signup">
-        Sign up
-      </Link>
-    </div>
-  );
-};
+    // useEffect(() => {}, [user]);
+
+    //   return (
+    //     <div id="header-login-signup">
+    //       <Link to="/login">Login</Link>
+    //       <Link className="colored-btn" to="/signup">
+    //         Sign up
+    //       </Link>
+    //     </div>
+    //   );
+    // };
+    return (
+      <div id="header-login-signup">
+        <Link to="/login">Login</Link>
+        <Link className="colored-btn" to="/signup">
+          Sign up
+        </Link>
+      </div>
+    );
+  };
 
   return (
     <div>

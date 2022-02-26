@@ -7,3 +7,4 @@ export const PLACE_BOOKING_ORDER = "PLACE_BOOKING_ORDER";
 export const ADD_ORDER_ID = "ADD_ORDER_ID";
 export const DELETE_CITY = "DELETE_CITY";
 export const ADD_ALL_LOCATIONS = "ADD_ALL_LOCATIONS";
+export const LOGOUT = "LOGOUT";
