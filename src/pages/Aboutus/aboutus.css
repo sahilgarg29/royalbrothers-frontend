@@ -1,0 +1,76 @@
+#aboutheadimg{
+    width: 100%;
+}
+#aboutPara{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color:rgb(102, 102, 102);
+    font-size:14.5px;
+    line-height:24px;
+    font-weight:400;
+    margin-top: 6%;
+    background-color: white;
+}
+
+.howitworks5678{
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 30px;
+    font-weight: 600;
+    line-height:36.608px;
+    margin-top: 6%;
+   }
+   .yellowline123456{
+       width: 9%;
+       height: 0.8vh;
+       background-color:#ffbf00 ;
+       margin: auto;
+   }
+
+   #aboutjourney123{
+       width: 80%;
+       margin: auto;
+
+   }
+   #aboutjourney123>img{
+       width: 95%;
+       margin-top: 5%;
+   }
+   #staytunedfor{
+    text-align: center;
+    color: rgba(51,51,51);
+    font-size: 23px;
+    font-weight: 600;
+    line-height:34px;
+    margin-top: 5%;
+   }
+   #staytunedfor>span{
+       color: #ffbf00;
+   }
+   #aboutlastimg{
+       width: 90%;
+       margin: auto;
+       margin-top: 5%;
+   }
+   #aboutlastimg>img{
+       width: 100%;
+   }
+
+
+   /* media query */
+
+   @media only screen and (max-width:650px){
+    #aboutPara{
+        font-size:11px;
+        line-height:18px;
+    }  
+    .howitworks5678{
+        font-size: 18px
+    }
+    #staytunedfor{
+        font-size: 15px;
+    }
+
+   }

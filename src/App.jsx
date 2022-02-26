@@ -10,6 +10,9 @@ import { Offers } from "./pages/offers/offers"
 import { EarnWithUs } from "./pages/partenerwithus/earnwithus/earn";
 import { PartnerWithUs } from "./pages/partenerwithus/ownfranchise/partenerus";
 import { StorePage } from "./pages/Store/store";
+import { AboutUs } from "./pages/Aboutus/aboutus";
+
+
 
 function App() {
   return (
@@ -25,6 +28,7 @@ function App() {
         <Route path="/earnwithus" element={<EarnWithUs/>}></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs/>}></Route>
         <Route path="/storepage" element={<StorePage/>}></Route>
+        <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
     </div>
   );
