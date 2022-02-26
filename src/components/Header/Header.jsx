@@ -59,9 +59,15 @@ const Header = () => {
          'aria-labelledby': 'basic-button',
        }}
      >
-       <MenuItem onClick={handleClose}>My profile</MenuItem>
-       <MenuItem onClick={handleClose}>My Rides</MenuItem>
-       <MenuItem onClick={handleClose}><Link to="/logout">Logout</Link></MenuItem>
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-rides-524da8ffff10d2e01c9e84efcfb373e8f0ac875de5ffe22451edac747b5a7153.png"></img>
+         My profile</MenuItem>
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-profile-183f7c4413f90f48fb9c0778c76c72dcb26b8b3b9485e18b1cb200a364ef82f4.png"></img>
+         My Rides</MenuItem>
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-logout-6020357dca0e3d23e89ff421e5b5a8bb084a61095430c68c9c357bfbc92b1b21.png"></img>
+         <Link to="/logout">Logout</Link></MenuItem>
      </Menu>
      </div>
       );

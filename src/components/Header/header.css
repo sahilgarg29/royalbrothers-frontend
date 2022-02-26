@@ -64,6 +64,7 @@ nav > ul img {
   padding: 5px 5px;
   border-radius: 4px;
   /* margin-right: 30px; */
+  
 }
 
 #header-user:hover {
@@ -100,6 +101,10 @@ nav > ul img {
 .profileIcon img{
   height:100%;
 }
+.profileIcon h4{
+  color: #303030;
+  
+}
 
 .whatsapp{
   height:35px;
@@ -120,4 +125,8 @@ nav > ul img {
 .chatnow{
   color: #006ccc;
   text-decoration: underline;
+}
+
+.menuItem img{
+  padding-right: 10px;
 }
