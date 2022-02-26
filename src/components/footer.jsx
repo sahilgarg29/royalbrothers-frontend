@@ -50,6 +50,7 @@ export const Footer=() => {
           <h4>Quick Links</h4>
           <div className="Footer_main_upper"></div>
           <div>
+            {/* <p>Tariff</p> */}
             <p>Tariff</p>
             <p>Offers</p>
             <p>Riding Gears</p>

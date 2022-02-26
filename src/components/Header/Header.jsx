@@ -20,15 +20,24 @@ const Header = () => {
       );
     }
 
-    return (
-      <div id="header-login-signup">
-        <Link to="/login">Login</Link>
-        <Link className="colored-btn" to="/signup">
-          Sign up
-        </Link>
-      </div>
-    );
-  };
+  //   return (
+  //     <div id="header-login-signup">
+  //       <Link to="/login">Login</Link>
+  //       <Link className="colored-btn" to="/signup">
+  //         Sign up
+  //       </Link>
+  //     </div>
+  //   );
+  // };
+  return (
+    <div id="header-login-signup">
+      <Link to="/login">Login</Link>
+      <Link className="colored-btn" to="/signup">
+        Sign up
+      </Link>
+    </div>
+  );
+};
 
   return (
     <div>
