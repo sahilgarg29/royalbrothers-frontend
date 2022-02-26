@@ -31,10 +31,11 @@
    height: 10vh;
    width: 30vh;
    border: none;
-   border-radius: 10%;
+   border-radius: 10px;
    font-size: 17px;
    font-weight: 700;
    cursor: pointer;
+   margin-top: 8%;
 }
 
 .howitworks{
@@ -46,12 +47,12 @@
  line-height:36.608px;
  margin-top: 6%;
 }
-.yellowline{
+.yellowline1234{
     width: 9%;
     height: 1vh;
     background-color:#ffbf00 ;
     margin: auto;
-    margin-top: -25px;
+    /* margin-top: -25px; */
 }
 .howitworks>p{
     font-size: 15px;

@@ -157,7 +157,7 @@ export const Bikes = ()=>{
                    {
                        data.map((e)=>{
                            return(
-                               <div className="mapbikes" key={e._id}>
+                               <div className="mapbikes123" key={e._id}>
                                    <p>zero deposite</p>
                                    <h6>{e.model}</h6>
                                    <img src={e.imageUrl} alt=""/> <br/>
@@ -183,7 +183,7 @@ export const Bikes = ()=>{
                                    </div>
     
 
-                                   <div className="prizebike">
+                                   <div className="prizebike1234">
                                        <div>
                                            <p>₹{e.pricePerHour}</p>
                                            <span>(100 KM included)</span>

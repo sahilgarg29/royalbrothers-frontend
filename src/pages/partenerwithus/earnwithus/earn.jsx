@@ -33,7 +33,7 @@ export const EarnWithUs = ()=>{
    
            <div className="howitworks">
                 <h3>How it works</h3>
-                <div className="yellowline"></div>
+                <div className="yellowline1234"></div>
                 <p>Invest in Royal Brothers bikes and start earning every month</p>
             
            </div>
@@ -64,7 +64,7 @@ export const EarnWithUs = ()=>{
 
           <div className="howitworks">
                 <h3>FAQ's</h3>
-                <div className="yellowline"></div>
+                <div className="yellowline1234"></div>
            </div>
 
            <div id="qustionnans">
@@ -139,7 +139,7 @@ export const EarnWithUs = ()=>{
            
           <div className="howitworks">
                 <h3>Why Royal Brothers?</h3>
-                <div className="yellowline"></div>
+                <div className="yellowline1234"></div>
            </div>
 
            <Slide easing="ease" className="Slide">

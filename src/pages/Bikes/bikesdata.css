@@ -19,16 +19,19 @@
 .sorthead>div>p{
     font-size:18px;
     font-weight:700;
-   
+   margin-top: 30%;
     margin-left: 50%;
 }
 .sortingbtn{
     display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
     margin-left: 25%;
 }
 
 .sortingbtn>button{
-    border: none;
+    /* margin-left: 2%; */
+    /* border: none; */
     font-size:11px;
     font-weight:500;
     background-color: white;
@@ -137,7 +140,7 @@
 
 
 .secoundmain{
-    width: 70%;
+    width: 80%;
     /* border: 1px solid black; */
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -149,7 +152,7 @@
     gap: 3%;
     flex-wrap: wrap;
 }
-.mapbikes{
+.mapbikes123{
     /* border: 1px solid red; */
     width: 28%;
     margin-top: 5%;
@@ -158,24 +161,25 @@
     padding-bottom: 0.5%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.mapbikes>p{
+.mapbikes123>p{
     float: left;
    font-size: 10px;
    margin-top: -1%;
 }
-.mapbikes>h6{
+.mapbikes123>h6{
+    margin-top: 8%;
     font-size: 15px;
     font-weight:700;
 text-align:center;
 }
-.mapbikes>img{
+.mapbikes123>img{
     /* height: 35%; */
     width: 70%;
 }
-.mapbikes>span{
+.mapbikes123>span{
     font-size: 10px;
 }
-.mapbikes>select{
+.mapbikes123>select{
     width: 95%;
     border: none;
     border-bottom: 1px solid black;
@@ -199,29 +203,29 @@ text-align:center;
     padding-top: 2%;
     margin-top: 10%;
 }
-.prizebike{
+.prizebike1234{
     display: flex;
     gap: 30%;
     font-size: 10px;
     /* height: 20px; */
     padding: 2%;
-    margin-top: -20px;
+    /* margin-top: -10px; */
     margin-bottom: 10px;
 }
 
-.prizebike>div{
+.prizebike1234>div{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-.prizebike>div>p{
+.prizebike1234>div>p{
     font-size: 15px;
 }
 .prizebike>div>span{
     font-size: 8px;
     margin-top: -15px;
 }
-.prizebike>div>button{
+.prizebike1234>div>button{
     height: 100%;
     background-color: rgb(254,210,80);
     margin-top: 15px;
@@ -257,6 +261,12 @@ text-align:center;
     }
     .applyfilter{
         display: none;
+    }
+
+
+    .mapbikes123{
+        /* border: 1px solid red; */
+        width: 47%;
     }
   }
 

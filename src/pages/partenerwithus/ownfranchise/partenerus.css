@@ -51,7 +51,7 @@
        height: 1vh;
        background-color:#ffbf00 ;
        margin: auto;
-       margin-top: -25px;
+       /* margin-top: -25px; */
    }
    .howitworks>p{
        font-size: 15px;

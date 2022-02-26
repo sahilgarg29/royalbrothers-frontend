@@ -36,10 +36,11 @@
 }
 
 #ridinggears>div{
-  width: 21%;
+  width: 23.5%;
   text-align: left;
   margin-top: 5%;
   padding: 1%;
+  padding-bottom: 0%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 #ridinggears>div:hover{
@@ -59,7 +60,7 @@
     font-size: 13px;
     font-weight: 600;
     color: rgb(254,210,80);
-    margin-top: -2%;
+    margin-top: 2%;
 }
 #ridinggears>div>h4>span{
     color: black;
@@ -72,6 +73,7 @@
     color: #fff;
     padding: 1.5%;
     width: 20%;
+    margin-top: 2%;
 }
 #viewallbtn{
     margin-top: 7%;
