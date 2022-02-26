@@ -41,3 +41,17 @@
 .datetime-picker .search-btn:hover {
   background-color: var(--primary-color-dark);
 }
+
+.dateTimelogos{
+  display: flex;
+  height:20px;
+  width:90px;
+  padding-left: 5px;
+  justify-content: space-between;
+ 
+}
+
+.searchYour{
+  color: #222;
+  font-weight: 550;
+}
