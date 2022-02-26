@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { BsChevronDown } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { CgProfile } from "react-icons/cg";
+// import { CgProfile } from "react-icons/cg";
 import "./header.css";
 import { Link } from "react-router-dom";
 import { deleteCity } from "../../redux/actions";
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -40,7 +41,12 @@ const Header = () => {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-      <CgProfile style={{ fontSize: "24px" }} /> {user.name}
+      {/* <CgProfile style={{ fontSize: "24px" }} /> {user.name} */}
+      <div className="profileIcon">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-profile-menu-70666577f1d7fbe6bba1f46ceacdb2e4abdbb2575014670cf9afbfbf35376c25.png"/>
+      <h4>{user.name}</h4>
+      </div>
+      
           <BsChevronDown />
       </Button>
       
@@ -84,6 +90,11 @@ const Header = () => {
 
   return (
     <div>
+      <div className="whatsapp">
+       <PhoneIcon className="phoneIcon"/> <p>+917795687594 / +919019595595 |</p>
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/wa_logo-78af8e2ff6153e5c6db2838470dc06142d5d53f8eb885f1ce33779de97649f0a.png"></img>
+       <p className="chatnow">  Chat now</p>
+       </div>
       <nav>
         <div id="logo">
           <Link to="/">
