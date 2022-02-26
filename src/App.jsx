@@ -25,10 +25,16 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/bikes" element={<Bikes />} />
         <Route path="/offer" element={<Offers />} />
+<<<<<<< Updated upstream
         <Route path="/earnwithus" element={<EarnWithUs/>}></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs/>}></Route>
         <Route path="/storepage" element={<StorePage/>}></Route>
         <Route path="/aboutus" element={<AboutUs />} />
+=======
+        <Route path="/earnwithus" element={<EarnWithUs/>} />
+        <Route path="/partner-with-us" element={<PartnerWithUs/>} />
+        <Route path="/storepage" element={<StorePage/>} />
+>>>>>>> Stashed changes
       </Routes>
     </div>
   );

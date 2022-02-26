@@ -1,35 +1,35 @@
-.headbikes{
+.headbikes1234{
     width: 100%;
     background-color: rgb(254,210,80);
     text-align: center;
     padding: 0.5%;
 }
-.headbikes>p{
+.headbikes1234>p{
     font-size: 12px;
 }
-.headbikes>p>span{
+.headbikes1234>p>span{
     color: blue;
     text-decoration: underline;
 }
 
-.sorthead{
+.sorthead123{
     display: flex;
     height: 35px;
 }
-.sorthead>div>p{
+.sorthead123>div>p{
     font-size:18px;
     font-weight:700;
    margin-top: 30%;
     margin-left: 50%;
 }
-.sortingbtn{
+.sortingbtn123{
     display: flex;
     gap: 2%;
     flex-wrap: wrap;
     margin-left: 25%;
 }
 
-.sortingbtn>button{
+.sortingbtn123>button{
     /* margin-left: 2%; */
     /* border: none; */
     font-size:11px;

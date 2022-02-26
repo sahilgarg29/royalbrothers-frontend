@@ -32,16 +32,16 @@ export const Bikes = ()=>{
     return (
         <div>
 
-           <div className="headbikes">
+           <div className="headbikes1234">
              <p>Now rent two wheelers for 7 days at a lower special price.<span>Click here for modified Search</span></p>
            </div>
            
-           <div className="sorthead">
+           <div className="sorthead123">
                     <div >
                     <p>Filter</p>
                     </div>
 
-                    <div className="sortingbtn">
+                    <div className="sortingbtn123">
                       <button> Sort by</button>
                       <button>Relevance</button>
                       <button >Price Low to High</button>
