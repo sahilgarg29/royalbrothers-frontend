@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import DateTimePicker from "../../components/DateTimePicker";
 import { useNavigate } from "react-router-dom";
 import SelectCity from "../../components/SelectCity";
-// import slideshow from "../../components/slideshow";
+import Slider from "../../components/Slider/Slider";
 // import { Footer } from "../../components/footer";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
@@ -167,7 +167,7 @@ const Home = () => {
           </h2>
           <div className="yellowbox"></div>
         </div>
-        {/* <slideshow /> */}
+        <Slider />
         <div className="heading">
           <h2 style={{ textAlign: "center", color: "#212121" }}>FEATURED IN</h2>
           <div className="yellowbox"></div>
