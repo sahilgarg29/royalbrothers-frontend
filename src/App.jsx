@@ -14,6 +14,7 @@ import { Footer } from "./components/footer";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { fetchAllLocations } from "./redux/actions";
+import Logout from "./components/Logout";
 
 function App() {
   const dispatch = useDispatch();
@@ -35,6 +36,7 @@ function App() {
         <Route path="/offer" element={<Offers />} />
         <Route path="/earnwithus" element={<EarnWithUs />}></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
+        <Route path="/logout" element={<Logout />} />
       </Routes>
       <Footer />
     </div>

@@ -7,6 +7,7 @@ import {
   ADD_ORDER_ID,
   ADD_USER,
   DELETE_CITY,
+  LOGOUT,
   SELECT_CITY,
 } from "./actionTypes";
 
@@ -51,6 +52,9 @@ export const userReducer = (state = userState, action) => {
     case ADD_USER:
       saveData("user", action.payload);
       return action.payload;
+    case LOGOUT:
+      localStorage.removeItem("user");
+      return { token: "", name: "" };
     default:
       return state;
   }

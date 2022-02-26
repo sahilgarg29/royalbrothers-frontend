@@ -7,6 +7,7 @@ import {
   ADD_ORDER_ID,
   ADD_USER,
   DELETE_CITY,
+  LOGOUT,
   SELECT_CITY,
 } from "./actionTypes";
 
@@ -95,6 +96,12 @@ export const login = (email, password) => (dispatch) => {
     .catch((err) => {
       console.log(err);
     });
+};
+
+export const logout = () => {
+  return {
+    type: LOGOUT,
+  };
 };
 
 export const addBooking = (payload) => {
