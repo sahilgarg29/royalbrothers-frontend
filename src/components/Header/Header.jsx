@@ -6,8 +6,19 @@ import { CgProfile } from "react-icons/cg";
 import "./header.css";
 import { Link } from "react-router-dom";
 import { deleteCity } from "../../redux/actions";
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const Header = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   const city = useSelector((store) => store.cities.selectedCity);
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
@@ -19,10 +30,34 @@ const Header = () => {
   const renderLogin = () => {
     if (user.token) {
       return (
-        <div id="header-user">
-          <CgProfile style={{ fontSize: "24px" }} /> {user.name}
+        <div>
+
+       
+        <Button id="header-user"
+        
+        aria-controls={open ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+      <CgProfile style={{ fontSize: "24px" }} /> {user.name}
           <BsChevronDown />
-        </div>
+      </Button>
+      
+       <Menu
+       id="basic-menu"
+       anchorEl={anchorEl}
+       open={open}
+       onClose={handleClose}
+       MenuListProps={{
+         'aria-labelledby': 'basic-button',
+       }}
+     >
+       <MenuItem onClick={handleClose}>My profile</MenuItem>
+       <MenuItem onClick={handleClose}>My Rides</MenuItem>
+       <MenuItem onClick={handleClose}><Link to="/logout">Logout</Link></MenuItem>
+     </Menu>
+     </div>
       );
     }
 
