@@ -115,6 +115,9 @@ nav > ul img {
   font-size: 14px;
   margin-left:30px;
 }
+.whatsapp:hover{
+  cursor: pointer;
+}
 .phoneIcon{
   margin-top:8px;
 }
