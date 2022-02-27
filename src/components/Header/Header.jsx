@@ -27,6 +27,7 @@ const Header = () => {
   const handleChangeLocation = () => {
     dispatch(deleteCity());
   };
+  
 
   const renderLogin = () => {
     if (user.token) {
@@ -121,7 +122,7 @@ const Header = () => {
             <a href="/tariff">Tariff</a>
           </li>
           <li>
-            <a href="#">Whats's new?</a>
+            <a href="/store">Whats's new?</a>
           </li>
           <li>
             <a href="/offer">Offers</a>

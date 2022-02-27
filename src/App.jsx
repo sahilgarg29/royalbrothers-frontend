@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import { fetchAllLocations } from "./redux/actions";
 import Logout from "./components/Logout";
 import {TariffPage} from "./pages/tariffPage/tariffPage"
+import {StorePage} from "./pages/Store/store"
 function App() {
   const dispatch = useDispatch();
 
@@ -38,6 +39,7 @@ function App() {
         <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
         <Route path="/logout" element={<Logout />} />
         <Route path="/tariff" element={<TariffPage/>}> </Route>
+        <Route path="/store" element={<StorePage/>}> </Route>
       </Routes>
       <Footer />
     </div>
