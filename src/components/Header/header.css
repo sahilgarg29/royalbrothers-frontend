@@ -1,4 +1,5 @@
 #logo {
+ 
   width: 130px;
   margin-left: 20px;
 }
@@ -27,9 +28,7 @@ nav > ul a {
   padding: 18px 15px;
 }
 
-nav > ul a:hover {
-  background-color: var(--primary-color);
-}
+
 
 nav > ul img {
   width: 25px;
@@ -81,6 +80,9 @@ nav > ul img {
   padding: 10px 10px;
 }
 
+#header-login-signup :nth-child(1):hover{
+  background-color: rgb(226, 224, 224);
+}
 .colored-btn {
   background-color: var(--primary-color);
   border-radius: 4px;
@@ -132,4 +134,37 @@ nav > ul img {
 
 .menuItem img{
   padding-right: 10px;
+}
+
+#basic-button{
+color: #303030;
+padding:12px;
+}
+
+#basic-button:hover{
+  background-color: var(--primary-color);
+}
+
+#offers{
+  color: #303030;
+  height:50px;
+}
+#offers:hover{
+  background-color: var(--primary-color);
+}
+
+#store{
+  color: #303030;
+  height:50px;
+}
+#store:hover{
+  background-color: var(--primary-color);
+}
+
+#tariff{
+  color: #303030;
+  height:50px;
+}
+#tariff:hover{
+  background-color: var(--primary-color);
 }
