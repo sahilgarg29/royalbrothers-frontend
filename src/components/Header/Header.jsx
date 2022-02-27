@@ -118,13 +118,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="">Tariff</a>
+            <a href="/tariff">Tariff</a>
           </li>
           <li>
             <a href="#">Whats's new?</a>
           </li>
           <li>
-            <a href="#">Offers</a>
+            <a href="/offer">Offers</a>
           </li>
           <li>
             <a href="#">Partner with us</a>
