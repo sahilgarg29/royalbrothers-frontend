@@ -128,13 +128,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="/tariff">Tariff</a>
+            <Button id="tariff"><Link to="/tariff">Tariff</Link></Button>
           </li>
           <li>
-            <a href="/store">Whats's new?</a>
+            <Button id="store"><Link to="/store">Whats's new?</Link></Button>
           </li>
           <li>
-            <a href="/offer">Offers</a>
+            <Button id="offers"><Link to="/offer">Offers</Link></Button>
           </li>
           <li>
           <Button
