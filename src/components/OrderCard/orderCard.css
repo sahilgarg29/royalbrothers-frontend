@@ -1,0 +1,13 @@
+.order-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.order-card .img-div {
+  width: 150px;
+}
+
+.order-card img {
+  width: 100%;
+}

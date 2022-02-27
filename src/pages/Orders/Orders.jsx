@@ -11,7 +11,7 @@ const Orders = () => {
   }, []);
 
   return (
-    <div>
+    <div className="orders">
       {orders.map((order) => {
         return <OrderCard key={order._id} order={order} />;
       })}
