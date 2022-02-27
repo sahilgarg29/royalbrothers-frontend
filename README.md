@@ -1,3 +1,7 @@
+# Team RoyalBrothers
+<div><img width="50%" src="./readmeImages/RB.png"></div>
+
+
 # 👋 Introduction
 Royal Brothers provides bike rental services across Major Cities in India and started in 2015 with aim to focus on building India’s largest mobility solutions provider. Their focus has led us to build a platform providing rentals spanning across 14 states, 43 cities and 3 international cities.
 
