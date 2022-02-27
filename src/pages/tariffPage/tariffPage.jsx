@@ -538,7 +538,7 @@ function TariffPage() {
                     {data.is_3packages ? (
                       <div>
                         <div className="bikeRental_3Div">
-                          <button className= "bikeRentalPackage" >HOURLY</button>
+                          <button className= "bikeRentalPackage" id="hourlyBtn" >HOURLY</button>
                           <button className= "bikeRentalPackage" >7 DAYS</button>
                           <button className="bikeRentalPackage" >15 DAYS</button>
                           <button className="bikeRentalPackage"  >30 DAYS</button>

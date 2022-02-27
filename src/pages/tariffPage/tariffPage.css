@@ -36,6 +36,9 @@
      background-color: transparent;
      font-weight: bold;
   }
+  #hourlyBtn{
+    border-bottom:4px solid rgb(254,210,80);
+  }
   #hours_Div{
       display: block;
   }
