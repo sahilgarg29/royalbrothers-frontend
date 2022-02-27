@@ -155,8 +155,8 @@ const Header = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handlePatClose}>Earn with us</MenuItem>
-        <MenuItem onClick={handlePatClose}>Own a franchise</MenuItem>
+        <MenuItem onClick={handlePatClose}><Link to="/earnwithus">Earn with us</Link></MenuItem>
+        <MenuItem onClick={handlePatClose}> <Link to="/partner-with-us">Own a franchise</Link></MenuItem>
 
       </Menu>
           </li>
