@@ -30,15 +30,16 @@ choose the bike and pay the amount. Finally, you reserved your bike.
 # Home Page
 In Home Page, you can book your bike ride by providing some details like your pickup date and dropoff date.
 And you can also find some more details like when they highlighted in National News Papers and milestones which are achieved by **RoyalBrothers**. <br></br> 
-<img src="./readmeImages/home.png"></img><br></br>
+<img width="90%" src="./readmeImages/home.png"></img><br></br>
 
-# Sign-Up & Sign-In Page
+# LOGIN & SIGN UP Page
 If you have account with Royal Brothers, please click on **Login** Button on top right side of the home page to login into your account.
 
 If you Don't have an account, please click on **SignUp** Button on top right side of the page to create account and provide required details and you will get OTP to mobile number to confirm signUp procedure.
 
 Finally, login with your Details and you will redirected to HomePage. <br></br>
-<img src="./readmeImages/signin.png">
+<img src="./readmeImages/login.JPG">
+<img src="./readmeImages/signup.JPG">
 <br></br>
 
 # Tariff Page
@@ -47,7 +48,7 @@ They also provide bikes on monthly basis, for 15, 7 days and Hourly. <br></br>
 <img src="./readmeImages/tariffPage.png">
 <br></br>
 
-# Product Details Page
+# Booking Details
 In this page, you can find details like from where you need to pick your bike and you can also search bikes which are available based on location, you can also find based on bike models which you required. <br></br>
 <img src="./readmeImages/productDetails.png"><br></br>
 
@@ -64,7 +65,7 @@ If you have Coupon Code, please provide in Coupon Code Section to get Discount o
 In this page, you will need to pay the amount as per requirement and Finally You booked you ride With **RoyalBrothers**.
 <br></br>
 
-<img src="./readmeImages/paymentPage.png">
+<img src="./readmeImages/payment.png">
 &nbsp;
 
 
