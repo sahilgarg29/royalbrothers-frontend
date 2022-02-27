@@ -131,3 +131,29 @@
 .exbutton:hover {
   cursor: pointer;
 }
+
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+ .cashback{
+   width: 100%;
+   background-position: 10%;
+
+ }
+ .vehiclecontainer{
+    width: 85%;
+
+ }
+
+ .subscription{
+   width: 80%;
+
+ }
+ .subbutton{
+   width:auto;
+   
+ }
+ .excontainer{
+   width:85%;
+   right: 0;
+ }
+}
