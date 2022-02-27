@@ -20,6 +20,15 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const [partner, setPartner] = React.useState(null);
+  const pat = Boolean(partner);
+  const handlePartner = (event) => {
+    setPartner(event.currentTarget);
+  };
+  const handlePatClose = () => {
+    setPartner(null);
+  };
   const city = useSelector((store) => store.cities.selectedCity);
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
@@ -128,7 +137,28 @@ const Header = () => {
             <a href="/offer">Offers</a>
           </li>
           <li>
-            <a href="#">Partner with us</a>
+          <Button
+        id="basic-button"
+        aria-controls={pat ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={pat ? 'true' : undefined}
+        onClick={handlePartner}
+      >
+      Partner with us
+      </Button>
+      <Menu
+        id="basic-menu"
+        anchorEl={partner}
+        open={pat}
+        onClose={handlePatClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem onClick={handlePatClose}>Earn with us</MenuItem>
+        <MenuItem onClick={handlePatClose}>Own a franchise</MenuItem>
+
+      </Menu>
           </li>
         </ul>
         <div id="header-right">
