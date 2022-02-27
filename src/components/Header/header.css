@@ -1,0 +1,77 @@
+#logo {
+  width: 130px;
+  margin-left: 20px;
+}
+
+#logo img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav > ul a {
+  display: inline-block;
+  padding: 18px 15px;
+}
+
+nav > ul a:hover {
+  background-color: var(--primary-color);
+}
+
+nav > ul img {
+  width: 25px;
+}
+
+#location-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--primary-color);
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+}
+
+#header-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid var(--primary-color); */
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+#header-user:hover {
+  background-color: var(--primary-color);
+}
+
+#header-login-signup {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+#header-login-signup a {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.colored-btn {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
