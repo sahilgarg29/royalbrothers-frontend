@@ -6,7 +6,7 @@ export const PartnerWithUs = ()=>{
     return (
         <div id="main1">
            
-           <div className="headearn">Earn with us</div>
+           <div className="headearn">Own a franchise</div>
 
            <div id="headimage1">
                <div><h3>Partner with India's Largest Bike Rental Company</h3>

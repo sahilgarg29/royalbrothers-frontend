@@ -1,0 +1,307 @@
+#bikeRentalText {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #bikeDetailsDiv {
+    width: 80%;
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+  }
+  #bikeTariffDisplayDiv {
+    margin-bottom:3rem;
+    border-radius:0.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  
+  #bikeName{
+      text-align: center;
+  }
+  #bikeImage{
+      width:80%;
+      height: 2rem;
+      
+  }
+  .bikeRental_3Div{
+      display: flex;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      height:3rem;
+      
+  }
+  .bikeRentalPackage{
+      flex:1;
+      font-size:0.8rem;
+     border:none;
+     background-color: transparent;
+     font-weight: bold;
+  }
+  #hours_Div{
+      display: block;
+  }
+  
+  #days_7Div{
+      display: none;
+  }
+  #days_15Div{
+      display: none;
+  }
+  #days_30Div{
+      display: none;
+  }
+  .rental_charge_text{
+      text-align: left;
+      margin-left:1rem;
+      line-height: 0px;
+      font-weight: bold;
+      font-size:0.8rem;
+  }
+  #rental_charge_text_id{
+      margin-top:2rem;
+  }
+  .rental_charge_text{
+      line-height: 0px;
+  }
+  .rental_package_div{
+      display: flex;
+  }
+  .rental_leftText{
+      flex:2;
+      text-align: left;
+      margin-left:1.8rem;
+      font-size:.8rem;
+      text-align: justify;
+  }
+  .rental_rightText{
+      flex:1.5;
+      font-size:.8rem;
+  }
+  
+  .hourlyPackageText{
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border:1px solid white;
+      height:3rem;
+      
+  }
+  .active-tabs  {
+      background: white;
+      border-bottom: 1px solid transparent;
+    }
+  #hourlyText{
+      text-align: center;
+      font-size:0.8rem;
+      font-weight: bold;
+  }
+  #mon_thu_text{
+      margin-top:2rem;
+  }
+  .week_name{
+      text-align: left;
+      margin-left:1rem;
+      line-height: 0px;
+      font-weight: bold;
+      font-size:0.8rem;
+  }
+  .bookingTimeText{
+      text-align: left;
+      margin-left:1rem;
+      font-size:.7rem;
+  }
+  .book_24{
+  display: flex;
+  line-height:0px;
+  }
+  .book_text{
+      flex:2;
+      text-align: left;
+      margin-left:1.8rem;
+      font-size:.8rem;
+  }
+  .book_price{
+      flex:1.5;
+      font-size:.8rem;
+  }
+  .bookNowBtn{
+      width:100%;
+      border:none;
+      padding:0.6rem;
+      margin-top:1rem;
+      background-color: rgb(254,210,80);
+      color:black;
+      font-size:0.8rem;
+      font-weight: bold;
+      border-radius:0rem 0rem .5rem .5rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  
+  
+  @media (max-width: 1921px) {
+    #bikeRentalText {
+      font-size: 2rem;
+    }
+    #bikeDetailsDiv {
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2.5rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 1281px) {
+    #bikeRentalText {
+      font-size: 2rem;
+      text-align: center;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2.5rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 1025px) {
+    #bikeRentalText {
+      font-size: 2rem;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2.5rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 835px) {
+    #bikeRentalText {
+      font-size: 2rem;
+    }
+    #bikeDetailsDiv {
+      width: 90%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(2, 47%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 601px) {
+    #bikeRentalText {
+      font-size: 1.5rem;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(1, 100%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 415px) {
+    #bikeRentalText {
+      font-size: 1.5rem;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(1, 100%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:85%;
+      height:85%
+  }
+  }
+  
+  @media (max-width: 385px) {
+    #bikeRentalText {
+      font-size: 1.3rem;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 1rem auto;
+      grid-template-columns: repeat(1, 100%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:90%;
+      height:90%
+  }
+  }
+  
+  @media (max-width: 321px) {
+    #bikeRentalText {
+      font-size: 1rem;
+    }
+    #bikeDetailsDiv {
+      width: 85%;
+      margin: 0.8rem auto;
+      grid-template-columns: repeat(1, 100%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:90%;
+      height:90%
+  }
+  }
+  
+  @media (min-width: 200px) and (max-width: 241px) {
+    #bikeRentalText {
+      font-size: 0.8rem;
+    }
+    #bikeDetailsDiv {
+      width: 90%;
+      margin: 0.5rem auto;
+      grid-template-columns: repeat(1, 100%);
+      justify-content: space-between;
+    }
+    #bikeTariffDisplayDiv {
+      margin-bottom:2rem;
+    }
+    #bikeImage{
+      width:90%;
+      height:90%
+  }
+  }
+  

@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 👋 Introduction
+Royal Brothers provides bike rental services across Major Cities in India and started in 2015 with aim to focus on building India’s largest mobility solutions provider. Their focus has led us to build a platform providing rentals spanning across 14 states, 43 cities and 3 international cities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-They are obsessed with the concept of ‘Why buy when you can rent’.
+# 🙌 About this project:
+This is a team Project, built by  Team of 5 members in Unit -5 construct Week at **Masai School** and  created the **RoyalBrothers Website** clone with in 7 days
 
-## Available Scripts
+# ❤️ Our Team 
+- [Abhishek Kumar Mishra](https://github.com/abhimis12)
+- [Dasari Rajnarayana](https://github.com/drajnarayana)
+- [Sahil Kumar](https://github.com/sahilgarg29)
+- [Saiprasad Khansole](https://github.com/sai12348765patil)
+- [Yarasi Ashokvardhana Reddy](https://github.com/AshokvardhanaReddy)
+# How To Use ✅
+First we need to go [RoyalBrothers Website](https://www.royalbrothers.com/). Then you need to select city according to your need and if you have account with RoyalBrothers website, please login with your details. Otherwise please create a account by clicking on signUp Button and please provide  your details and  You'll get an OTP enter that OTP for validation and you'll be logged in. There you can explore the home page. In Home Page, pick your required date and it will redirect to the page which shows all bikes models which are availble.
+choose the bike and pay the amount. Finally, you reserved your bike.
+ In Tariff Page, you will find price for the different bike models and complete details. 
+  
+# Tech Stack Used 🔧
+- `React` 
+- `Redux`    
+- `JavaScript`
+- `Material UI` 
+- `MongoDB` 
+- `Node.JS`
+-`Express JS`
+- `Git`
+- `HTML`      
+- `CSS`   
+# Home Page
+In Home Page, you can book your bike ride by providing some details like your pickup date and dropoff date.
+And you can also find some more details like when they highlighted in National News Papers and milestones which are achieved by **RoyalBrothers**. <br></br> 
+<img src="./readmeImages/home.png"></img><br></br>
 
-In the project directory, you can run:
+# Sign-Up & Sign-In Page
+If you have account with Royal Brothers, please click on **Login** Button on top right side of the home page to login into your account.
 
-### `npm start`
+If you Don't have an account, please click on **SignUp** Button on top right side of the page to create account and provide required details and you will get OTP to mobile number to confirm signUp procedure.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Finally, login with your Details and you will redirected to HomePage. <br></br>
+<img src="./readmeImages/signin.png">
+<br></br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Tariff Page
+In Tariff Page, you will find all bikes which are provided by RoyalBrothers and the price details for each bike like how much they will charge, how mamy KMs to allowed to travel, how much money they will charge if you exceed the permissable KMs.
+They also provide bikes on monthly basis, for 15, 7 days and Hourly. <br></br>
+<img src="./readmeImages/tariffPage.png">
+<br></br>
 
-### `npm test`
+# Product Details Page
+In this page, you can find details like from where you need to pick your bike and you can also search bikes which are available based on location, you can also find based on bike models which you required. <br></br>
+<img src="./readmeImages/productDetails.png"><br></br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Order Summary
 
-### `npm run build`
+After Selecting your bike, you will be redirected to this page where you can see details like bike you selected, total Price you need to pay to book your order, number of helmets you required, permissible KM , if you exceed the permissible KM, how much will they charge and Finally coupon Code Details.
+If you have Coupon Code, please provide in Coupon Code Section to get Discount on your ride. <br></br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./readmeImages/orderSummary.png">
+&nbsp;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Payment Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this page, you will need to pay the amount as per requirement and Finally You booked you ride With **RoyalBrothers**.
+<br></br>
 
-### `npm run eject`
+<img src="./readmeImages/paymentPage.png">
+&nbsp;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# &nbsp; &nbsp; &nbsp; &nbsp; 👋 Thank You 👋

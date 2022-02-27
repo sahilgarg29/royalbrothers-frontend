@@ -105,8 +105,8 @@ const Login = () => {
         <button className="password" onClick={handleSubmit}>
           Login with Password
         </button>
-        {/* <p style={{ textAlign: "center" }}>OR</p>
-        <button className="otp">Login with OTP</button> */}
+        <p style={{ textAlign: "center" }}>OR</p>
+        <button className="otp">Login with OTP</button>
       </div>
     </div>
   );

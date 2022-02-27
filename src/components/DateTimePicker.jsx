@@ -11,10 +11,15 @@ const DateTimePicker = ({ handleDateSelect }) => {
 
   return (
     <div className="datetime-picker">
-      <h2>Search your next Ride</h2>
+      <h2 className="searchYour">Search your next ride</h2>
 
       <div>
-        <p>Pickup</p>
+        <p >Pickup</p>
+        <div className="dateTimelogos">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/date-609be488aaef36d8f84a823b97517d5551821ab02804e2f745b5c80550dbc46e.png"></img>
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/time-b6ac387420760c4f2c4ea8bf0b7dc644a7d2d3b1f77ba6987b095c6980f25ce0.png"></img>
+        </div>
+       
         <DatePicker
           selected={pickupDate}
           onChange={(date) => setpickupDate(date)}
@@ -29,9 +34,14 @@ const DateTimePicker = ({ handleDateSelect }) => {
           placeholderText="Date and Time"
           className="datepicker"
         />
+      
       </div>
       <div>
-        <p>DropOff</p>
+        <p >Dropoff</p>
+        <div className="dateTimelogos">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/date-609be488aaef36d8f84a823b97517d5551821ab02804e2f745b5c80550dbc46e.png"></img>
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/long_term/time-b6ac387420760c4f2c4ea8bf0b7dc644a7d2d3b1f77ba6987b095c6980f25ce0.png"></img>
+        </div>
         <DatePicker
           selected={dropoffDate}
           onChange={(date) => setdropoffDate(date)}
