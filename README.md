@@ -7,7 +7,7 @@ This is a team Project, built by  Team of 5 members in Unit -5 construct Week at
 
 # ❤️ Our Team Members 
 - [**Abhishek Kumar Mishra**]()
-- [**Dasari Rajnarayana**]()
+- [@Dasari Rajnarayana](https://github.com/drajnarayana)
 - **[Sahil Kumar]()**
 - **[Saiprasad Khansole]()**
 - **[Yarasi Ashokvardhana Reddy](https://www.linkedin.com/in/yarasi-ashokvardhana-reddy-33b560122/)**
