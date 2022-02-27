@@ -2,12 +2,24 @@ import React, { useEffect } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { BsChevronDown } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { CgProfile } from "react-icons/cg";
+// import { CgProfile } from "react-icons/cg";
 import "./header.css";
 import { Link } from "react-router-dom";
 import { deleteCity } from "../../redux/actions";
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Header = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   const city = useSelector((store) => store.cities.selectedCity);
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
@@ -19,10 +31,45 @@ const Header = () => {
   const renderLogin = () => {
     if (user.token) {
       return (
-        <div id="header-user">
-          <CgProfile style={{ fontSize: "24px" }} /> {user.name}
+        <div>
+
+       
+        <Button id="header-user"
+        
+        aria-controls={open ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+      {/* <CgProfile style={{ fontSize: "24px" }} /> {user.name} */}
+      <div className="profileIcon">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-profile-menu-70666577f1d7fbe6bba1f46ceacdb2e4abdbb2575014670cf9afbfbf35376c25.png" alt="avatar"/>
+      <h4>{user.name}</h4>
+      </div>
+      
           <BsChevronDown />
-        </div>
+      </Button>
+      
+       <Menu
+       id="basic-menu"
+       anchorEl={anchorEl}
+       open={open}
+       onClose={handleClose}
+       MenuListProps={{
+         'aria-labelledby': 'basic-button',
+       }}
+     >
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-rides-524da8ffff10d2e01c9e84efcfb373e8f0ac875de5ffe22451edac747b5a7153.png" alt="profile"></img>
+         My profile</MenuItem>
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-profile-183f7c4413f90f48fb9c0778c76c72dcb26b8b3b9485e18b1cb200a364ef82f4.png" alt="rides"></img>
+         My Rides</MenuItem>
+       <MenuItem onClick={handleClose} className="menuItem">
+         <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/user-logout-6020357dca0e3d23e89ff421e5b5a8bb084a61095430c68c9c357bfbc92b1b21.png" alt="logout"></img>
+         <Link to="/logout">Logout</Link></MenuItem>
+     </Menu>
+     </div>
       );
     }
 
@@ -49,10 +96,15 @@ const Header = () => {
 
   return (
     <div>
+      <div className="whatsapp">
+       <PhoneIcon className="phoneIcon"/> <p>+917795687594 / +919019595595 |</p>
+       <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/wa_logo-78af8e2ff6153e5c6db2838470dc06142d5d53f8eb885f1ce33779de97649f0a.png" alt="whatsapp"></img>
+       <p className="chatnow">  Chat now</p>
+       </div>
       <nav>
         <div id="logo">
           <Link to="/">
-            <img src="rb-logo.png" alt="" srcset="" />
+            <img src="rb-logo.png" alt="rb logo" srcset="" />
           </Link>
         </div>
         <ul>
