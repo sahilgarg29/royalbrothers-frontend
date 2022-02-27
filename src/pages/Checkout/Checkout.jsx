@@ -70,7 +70,7 @@ const Checkout = () => {
             }
           );
           alert("Payment Successfull");
-          navigate("/");
+          navigate("/orders");
         } catch (error) {}
       },
       prefill: {

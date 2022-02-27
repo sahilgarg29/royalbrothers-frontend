@@ -4,6 +4,7 @@ import {
   bookingReducer,
   cityReducer,
   locationReducer,
+  orderReducer,
   userReducer,
 } from "./reducer";
 import thunk from "redux-thunk";
@@ -15,6 +16,7 @@ export default createStore(
     user: userReducer,
     booking: bookingReducer,
     locations: locationReducer,
+    orders: orderReducer,
   }),
   applyMiddleware(thunk)
 );

@@ -3,6 +3,7 @@ import {
   ADD_ALL_BIKES,
   ADD_ALL_CITIES,
   ADD_ALL_LOCATIONS,
+  ADD_ALL_ORDERS,
   ADD_BOOKING,
   ADD_ORDER_ID,
   ADD_USER,
@@ -163,6 +164,29 @@ export const fetchAllLocations = () => (dispatch) => {
     .then((res) => {
       console.log(res);
       dispatch(addAllLocations(res.data.locations));
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+export const addAllOrders = (payload) => {
+  return {
+    type: ADD_ALL_ORDERS,
+    payload,
+  };
+};
+export const fetchAllOrders = () => (dispatch, getState) => {
+  const store = getState();
+  axios
+    .get("https://royalbrothers-backend.herokuapp.com/api/book", {
+      headers: {
+        Authorization: `Bearer ${store.user.token}`,
+      },
+    })
+    .then((res) => {
+      console.log(res);
+      dispatch(addAllOrders(res.data.bookings));
     })
     .catch((err) => {
       console.log(err);

@@ -3,6 +3,7 @@ import {
   ADD_ALL_BIKES,
   ADD_ALL_CITIES,
   ADD_ALL_LOCATIONS,
+  ADD_ALL_ORDERS,
   ADD_BOOKING,
   ADD_ORDER_ID,
   ADD_USER,
@@ -90,6 +91,17 @@ export const locationReducer = (state = locationState, action) => {
   switch (action.type) {
     case ADD_ALL_LOCATIONS:
       return action.payload;
+    default:
+      return state;
+  }
+};
+
+const orderState = [];
+
+export const orderReducer = (state = orderState, action) => {
+  switch (action.type) {
+    case ADD_ALL_ORDERS:
+      return action.payload.reverse();
     default:
       return state;
   }
