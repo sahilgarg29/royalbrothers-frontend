@@ -5,12 +5,12 @@ Royal Brothers provides bike rental services across Major Cities in India and st
 # 🙌 About this project:
 This is a team Project, built by  Team of 5 members in Unit -5 construct Week at **Masai School** and  created the **RoyalBrothers Website** clone with in 7 days
 
-# ❤️ Our Team Members 
-- [**Abhishek Kumar Mishra**]()
-- [@Dasari Rajnarayana](https://github.com/drajnarayana)
-- **[Sahil Kumar]()**
-- **[Saiprasad Khansole]()**
-- **[Yarasi Ashokvardhana Reddy](https://www.linkedin.com/in/yarasi-ashokvardhana-reddy-33b560122/)**
+# ❤️ Our Team 
+- [Abhishek Kumar Mishra](https://github.com/abhimis12)
+- [Dasari Rajnarayana](https://github.com/drajnarayana)
+- [Sahil Kumar](https://github.com/sahilgarg29)
+- [Saiprasad Khansole](https://github.com/sai12348765patil)
+- [Yarasi Ashokvardhana Reddy](https://github.com/AshokvardhanaReddy)
 # How To Use ✅
 First we need to go [RoyalBrothers Website](https://www.royalbrothers.com/). Then you need to select city according to your need and if you have account with RoyalBrothers website, please login with your details. Otherwise please create a account by clicking on signUp Button and please provide  your details and  You'll get an OTP enter that OTP for validation and you'll be logged in. There you can explore the home page. In Home Page, pick your required date and it will redirect to the page which shows all bikes models which are availble.
 choose the bike and pay the amount. Finally, you reserved your bike.
@@ -18,13 +18,14 @@ choose the bike and pay the amount. Finally, you reserved your bike.
   
 # Tech Stack Used 🔧
 - `React` 
-- `HTML`      
-- `CSS`        
-- `JavaScript` 
+- `Redux`    
+- `JavaScript`
+- `Material UI` 
 - `MongoDB` 
 - `Node.JS`
-- `GitHub` 
-- `Git` 
+- `Git`
+- `HTML`      
+- `CSS`   
 # Home Page
 In Home Page, you can book your bike ride by providing some details like your pickup date and dropoff date.
 And you can also find some more details like when they highlighted in National News Papers and milestones which are achieved by **RoyalBrothers**. <br></br> 
